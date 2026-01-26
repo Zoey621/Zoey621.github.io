@@ -1,0 +1,57 @@
+!doctype html>css
+
+body {
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #e8dbbc;
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+p{
+    margin-top: 10px;
+    font-size: 24px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 120px;
+    text-align: center;
+    font-family: "subway-new-york-std", sans-serif;
+    letter-spacing: 5px;
+font-style: normal;
+background-color: #d6263e;
+padding: 40px;
+margin: 0%;
+}
+
+h2 {
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 64px;
+    text-align: center;
+    font-family: "venice blvd", sans-serif;
+    letter-spacing: 2px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+   background-color: #d6263e;
+}
+footer{
+    align-items: baseline;
+
+}
+footer img {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 30px;
+    height: 30px;
+    
+}
