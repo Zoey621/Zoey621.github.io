@@ -19,15 +19,16 @@ img {
 
 p{
     color: #ffffff;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 24px;
     text-align: left;
-    padding: 20px;
+    padding: 10px;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 h1 {
+    margin-top: 0px;
     font-size: 120px;
     text-align: center;
     font-family: "subway-new-york-std", sans-serif;
@@ -45,8 +46,8 @@ h2 {
     text-align: center;
     font-family: "venice blvd", sans-serif;
     letter-spacing: 2px;
-    padding-top: 35px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 20px;
    background-color: #d6263e;
 }
 footer{
