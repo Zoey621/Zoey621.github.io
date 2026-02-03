@@ -41,7 +41,7 @@ body {
 
 .orange {
 
-    color: orange;
+    color: rgb(251, 255, 0);
 }
 
 .western {
@@ -62,17 +62,15 @@ body {
 
 }
 
-p.shaded {
-
-    background-color: rgb(226, 216, 166);
-}
-
-h2.shaded {
-
-    background-color: rgb(244, 239, 239);
-}
-
 h1#pageTitle { 
 
     color: red;
+}
+
+ifraome {
+background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
 }
