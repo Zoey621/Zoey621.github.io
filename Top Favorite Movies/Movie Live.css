@@ -1,0 +1,78 @@
+/* * {
+
+    outline: 1px solid magenta;
+} */
+
+body {
+
+    font-size: 18pt;
+}
+
+.center {
+
+    text-align: center;
+}
+
+
+.blue {
+
+    color: blue;
+}
+
+.red {
+    
+    color: red;
+}
+
+.pink {
+
+    color: pink;
+}
+
+.bold {
+
+    font-weight: bold;
+}
+
+.italic {
+
+    font-style: italic;
+}
+
+.orange {
+
+    color: orange;
+}
+
+.western {
+
+    font-family: "kuhlman-vf", sans-serif;
+    font-variation-settings: "SEED" 0, "wdth" 100;
+}
+
+.lightShade {
+
+    /* background-color: rgb(220, 220, 220); */
+
+}
+
+.darkShade {
+
+    /* background-color: rgb(168, 168, 168); */
+
+}
+
+p.shaded {
+
+    background-color: rgb(226, 216, 166);
+}
+
+h2.shaded {
+
+    background-color: rgb(244, 239, 239);
+}
+
+h1#pageTitle { 
+
+    color: red;
+}
