@@ -2,6 +2,7 @@
     outline:solid 1px rgb(72, 0, 255);
 }
 body {
+    margin: 0px;
     background-image: url("Texturelabs_Paper_176L.jpg"); ;
     font-family: "roboto", sans-serif;
     font-weight: 400;
@@ -27,7 +28,7 @@ p{
     margin-left: auto;
     margin-right: auto;
 }
-h1 {
+h1 { color: #ffffff;
     margin-top: 0px;
     font-size: 120px;
     text-align: center;
