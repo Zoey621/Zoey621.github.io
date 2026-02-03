@@ -1,0 +1,84 @@
+* {
+    outline:solid 1px rgb(72, 0, 255);
+}
+body {
+    margin: 0px;
+    background-image: url("Texturelabs_Paper_176L.jpg"); ;
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #000000;
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+p{
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: left;
+    padding: 10px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 { color: #ffffff;
+    margin-top: 0px;
+    font-size: 120px;
+    text-align: center;
+    font-family: "subway-new-york-std", sans-serif;
+    letter-spacing: 5px;
+font-style: normal;
+background-color: #d6263e;
+padding: 40px;
+margin: 0%;
+}
+
+h2 {
+    color: #ffffff;
+    margin-top: 0px;
+    font-size: 64px;
+    text-align: center;
+    font-family: "venice blvd", sans-serif;
+    letter-spacing: 2px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+   background-color: #d6263e;
+}
+footer{
+    color: #ffffff;
+    background-color: #d6263e;
+    text-align: center;
+    margin-top: 50px;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 10px;
+}
+footer p {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+}
+footer img {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 30px;
+    height: 30px;
+    
+}
+
+footer a {
+    display: inline-block;
+}
