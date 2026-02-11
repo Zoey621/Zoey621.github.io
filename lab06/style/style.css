@@ -3,6 +3,10 @@
 
 }
 
+*{
+    outline: 2px solid black;
+
+}
 body{
     margin: 0;
     display: flex;
@@ -14,4 +18,76 @@ header, nav, main, footer {
 
  background-color: lightgray;
  
+}
+
+header {
+    background-color: lightgreen;
+    height: 200px;
+}
+
+nav {
+    background-color: lightblue;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+nav a {
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+     height: 50px;
+    display: inline-block;
+    padding: .5rem;
+    font-size: 1.2rem;
+   
+}
+
+nav a:hover{
+    background-color: rgb(255, 172, 215);
+    color: purple;
+    
+
+}
+nav a:link {
+
+background-color: rgb(230, 173, 226);
+color: black;
+
+}
+
+main {
+    background-color: lightcoral;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+aside {
+    color: white;
+    background-color: rgb(255, 169, 56);
+    width: 400px;
+    order: 1;
+}
+
+aside a {
+    color: white;
+    text-decoration: none;
+    display: block;
+margin: 0px;
+    font-size: 1rem;
+}
+
+article  {
+    flex-grow: 1;
+    background-color: rgb(182, 255, 234);
+    order: 2;
+}
+footer {
+    background-color: lightyellow;
+    height: 100px;
 }
