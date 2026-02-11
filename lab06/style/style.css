@@ -1,0 +1,17 @@
+:root {
+    font-size: 18pt;
+
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* I will remove this later */
+}
+
+header, nav, main, footer {
+
+ background-color: lightgray;
+ 
+}
