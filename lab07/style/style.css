@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+
+#maincontainer{
+    background-color: aqua;
+    width: 100vw;
+    height: 100vw;
+
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+background-image: url("../../MEDIA/ink pattnern background.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: ;
+
+
+}
+
+#maincounter > div{
+
+    display:flex;
+    flex-direction:;
+    jusifty-content: ;
+    align-items: ;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-image: fixed;
+
+    background-size: ;
+    
+
+}
+p{
+    width: 300px;
+    height: 300px;
+
+}
+
+h1{
+
+}
+
+img{
+    width: 100%;
+}
