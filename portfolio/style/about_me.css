@@ -2,7 +2,8 @@
   outline: 1px solid rgb(72, 0, 255);
 }
 
-.nav{
+.buttons{
+    background-color: transparent;
     color: #ffff;
     font-family: "robto slab", sans-serif;
     font-size: 48pt;
@@ -55,11 +56,12 @@ h2{
     border-radius: 10px;
     max-width: 1920px;
     margin: auto;
-    background-image: url(../img/TextureLabs_Paper_176L.jpg); 
-    background-size: 150%;
 }
 
 .container{
+    fill: 100%;
+    background-image: url(../img/TextureLabs_Paper_176L.jpg); 
+    background-size: 150%;
     width: 100%;
     align-items: center;
     justify-items: center;
