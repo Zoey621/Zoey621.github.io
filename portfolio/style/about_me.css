@@ -1,12 +1,15 @@
 * {
   outline: 1px solid rgb(72, 0, 255);
 }
-
-.buttons{
-    background-color: transparent;
+/* need to ask about why my text wont be white*/
+.nav_buttons{
+    background-color: red;
+    padding-top: 10px;
     color: #ffff;
-    font-family: "robto slab", sans-serif;
-    font-size: 48pt;
+    text-decoration: none;
+    text-decoration-color: #ffff;
+    font-family: "venice-blvd", sans-serif;
+    font-size: 24pt;
 }
 
 h1 {
