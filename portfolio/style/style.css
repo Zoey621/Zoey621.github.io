@@ -1,0 +1,15 @@
+
+
+.nav_buttons{
+    background-color: red;
+    padding-top: 10px;
+    color: #ffff;
+    text-decoration: none;
+    text-decoration-color: #ffff;
+    font-family: "venice-blvd", sans-serif;
+    font-size: 24pt;
+}
+
+.container{
+    background-image: url(../img/TextureLabs_Paper_176L.jpg);
+}
