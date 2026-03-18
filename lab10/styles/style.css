@@ -8,12 +8,38 @@
     gap: 10px;
 }
 
-img{
+img {
     width: 100%;
     height: auto;
+}
+
+main {
+    display: grid;
+    grid:"header,header,header,header"
+        "nav,nav,nav,nav"
+        "aside,page,page,aside"
+        "footer, footer,footer,footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: menu;
+}
+
+aside {
+    grid-area: side;
+}
+
+article {
+    grid-area: page;
 }
 
 header,main,footer,aside {
  border: 5px solid black;
  padding: 0.7rem;
 }
+
+
