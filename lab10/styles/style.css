@@ -2,7 +2,7 @@
     font-size: 24px;
 }
 
-#grid-containier {
+/* #grid-containier {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px;
@@ -11,14 +11,15 @@
 img {
     width: 100%;
     height: auto;
-}
+} */
 
 main {
+
     display: grid;
-    grid:"header,header,header,header"
-        "nav,nav,nav,nav"
-        "aside,page,page,aside"
-        "footer, footer,footer,footer";
+    grid:"side header header header"
+       "side menu menu menu"
+       "side page page page"
+       "side footer footer footer";
 }
 
 header {
@@ -29,15 +30,19 @@ nav {
     grid-area: menu;
 }
 
-aside {
-    grid-area: side;
-}
-
 article {
     grid-area: page;
 }
 
-header,main,footer,aside {
+aside {
+    grid-area: side;
+}
+
+footer {
+    grid-area: footer;
+}
+
+header,nav,article,footer,aside {
  border: 5px solid black;
  padding: 0.7rem;
 }
