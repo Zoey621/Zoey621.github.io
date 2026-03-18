@@ -1,0 +1,19 @@
+:root {
+    font-size: 24px;
+}
+
+#grid-containier {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+header,main,footer,aside {
+ border: 5px solid black;
+ padding: 0.7rem;
+}
