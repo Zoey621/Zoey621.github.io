@@ -2,7 +2,7 @@
     font-size: 24px;
 }
 
-/* #grid-containier {
+#grid-containier {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     gap: 10px;
@@ -11,23 +11,30 @@
 img {
     width: 100%;
     height: auto;
-} */
+}
 
 main {
-
+    min-height: 100vh;
     display: grid;
-    grid:"side header header header"
-       "side menu menu menu"
-       "side page page page"
-       "side footer footer footer";
+    grid:"header header header header"
+       "menu menu menu menu"
+       "page page page page"
+       "side side side side"
+       "footer footer footer footer";
+
+    grid-template-rows: auto 80px 60vh auto;
+
 }
 
 header {
     grid-area: header;
+    font-size: 3rem;
 }
 
+  
 nav {
     grid-area: menu;
+    gap: 20px;
 }
 
 article {
@@ -47,4 +54,62 @@ header,nav,article,footer,aside {
  padding: 0.7rem;
 }
 
+#brickcontainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+}
 
+#brickcontainer div {
+
+    border: 5px solid blueviolet;
+}
+
+#brickcontainer div:nth-child(1) {
+    grid-row: 1 / span 4;
+    grid-column: 1 / span 4;
+}
+
+#brickcontainer div:nth-child(4) {
+    grid-row: 2 / span 5;
+}
+
+
+/*ipad layout breakpoint*/
+@media screen and (max-width: 768px) {
+    nav{
+
+        justify-content: flex-end;
+
+    }
+
+
+}
+/*desktop layout breakpoint*/
+@media screen and (min-width: 992px) {
+
+    main{
+
+        grid:"header header header header"
+       "side menu menu menu"
+       "side page page page"
+       "footer footer footer footer";
+
+        grid-template-rows: auto 80px 60vh auto;
+    }
+}
+
+
+/* large desktop layout breakpoint */
+@media screen and (min-width: 1200px) {
+
+    main{
+
+        grid:"header header header header header"
+       "side menu menu menu menu"
+       "side page page page page"
+       "footer footer footer footer footer";
+
+        grid-template-rows: auto 80px 60vh auto;
+    }
+}
