@@ -1,0 +1,29 @@
+:root {
+
+font-size: 18pt;
+
+}
+
+#grid-container {
+
+    display: grid;
+    grid-template-columns:1fr 2fr 2fr 2fr 1fr;
+    background-color: lightcoral;
+    gap: 0.5rem;
+    padding: 0.5rem;
+
+}
+
+#grid-container div {
+
+    background-color: white
+    padding: 0.5rem;
+
+}
+
+#grid-container div:nth-child(10) {
+
+    grid-column: 2/4;
+    grid-row: 3/4;
+
+}
