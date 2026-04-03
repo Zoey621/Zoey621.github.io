@@ -1,0 +1,45 @@
+.contact-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Two inputs side-by-side */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input {
+  width: 50%;
+}
+
+/* Input + textarea styling */
+input,
+textarea {
+  background-color: #d9d9d9; /* light gray */
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+::placeholder {
+  color: #555;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #cfcfcf;
+}
+
+input, textarea {
+  border-radius: 0; /* removes rounded corners */
+}
