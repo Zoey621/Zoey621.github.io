@@ -1,0 +1,21 @@
+.carousel {
+  width: 100%;
+  max-width: 600px;
+  height: 400px; /* IMPORTANT */
+  overflow: hidden;
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}

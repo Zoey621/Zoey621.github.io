@@ -1,0 +1,283 @@
+/* Import Google Fonts as a fallback for AltaCalifornia */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    overflow-x: hidden;
+}
+
+/* Main Container */
+.project-page-web {
+    position: relative;
+    width: 100%;
+    height: 2232px;
+    background: white;
+    overflow: hidden;
+}
+
+/* Background Texture */
+.texture-background {
+    position: absolute;
+    height: 2170px;
+    left: -522px;
+    top: 10px;
+    width: 2819px;
+}
+
+.texture-overflow {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.texture-image {
+    position: absolute;
+    height: 100.01%;
+    left: -18.88%;
+    max-width: none;
+    top: 0;
+    width: 100%;
+}
+
+/* Red Bars */
+.red-bar-bottom {
+    position: absolute;
+    background: #d72740;
+    height: 71px;
+    left: 15px;
+    top: 2161px;
+    width: 1440px;
+}
+
+.red-bar-top {
+    position: absolute;
+    background: #d72740;
+    height: 99px;
+    left: -10px;
+    top: -1px;
+    width: 1450px;
+}
+
+/* Diagonal Shape */
+.diagonal-shape {
+    position: absolute;
+    height: 25px;
+    left: 811px;
+    top: 97px;
+    width: 621px;
+}
+
+.diagonal-shape svg {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Works Title */
+.works-title {
+    position: absolute;
+    font-family: 'Cinzel', serif;
+    height: 155px;
+    line-height: normal;
+    left: 44px;
+    font-style: normal;
+    color: #faf8f7;
+    font-size: 170px;
+    top: 150px;
+    width: 379px;
+    font-weight: normal;
+}
+
+/* Web Navigation */
+.web-nav {
+    position: absolute;
+    display: flex;
+    font-family: 'Cinzel', serif;
+    gap: 141px;
+    align-items: center;
+    line-height: normal;
+    left: 40px;
+    font-style: normal;
+    font-size: 89px;
+    color: black;
+    top: 17px;
+    width: 1359px;
+}
+
+.nav-item {
+    height: 59px;
+    position: relative;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #d72740;
+}
+
+.nav-item:nth-child(1) { width: 163px; }
+.nav-item:nth-child(2) { width: 195px; }
+.nav-item:nth-child(3) { width: 299px; }
+.nav-item:nth-child(4) { width: 212px; }
+
+/* Project Items - General Styles */
+.project-item {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-transform-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.project-rotated {
+    flex: none;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover .project-rotated {
+    transform: rotate(0deg) !important;
+}
+
+.project-image-container {
+    position: relative;
+}
+
+.project-image-container img {
+    position: absolute;
+    inset: 0;
+    max-width: none;
+    object-fit: cover;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* Specific Project Positions and Sizes */
+
+/* Hunan House Ad */
+.hunan-house {
+    left: 140px;
+    top: 656px;
+    width: 663.809px;
+    height: 788.039px;
+}
+
+.hunan-house .project-image-container {
+    height: 719.863px;
+    width: 575.89px;
+}
+
+/* Game Week Cover */
+.game-week {
+    left: 708px;
+    top: 389px;
+    width: 667.242px;
+    height: 796.367px;
+}
+
+.game-week .project-image-container {
+    height: 734.162px;
+    width: 587.33px;
+}
+
+/* Type Booklet */
+.type-booklet {
+    left: 672px;
+    top: 986px;
+    width: 740px;
+    height: 915px;
+}
+
+.type-booklet .project-transform-wrapper {
+    left: 10px;
+    top: 10px;
+    width: 720.141px;
+    height: 895.358px;
+}
+
+.type-booklet .project-image-container {
+    height: 777.337px;
+    width: 502.983px;
+}
+
+/* Senior Poster */
+.senior-poster {
+    left: 175px;
+    top: 1298px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.senior-poster .project-transform-wrapper {
+    height: 800.513px;
+    width: 660.67px;
+    flex-shrink: 0;
+}
+
+.senior-poster .project-image-container {
+    height: 710.653px;
+    width: 532.99px;
+}
+
+/* Torn Smilodons Logo */
+.torn-smilodons {
+    left: 130px;
+    top: 204px;
+    width: 801.18px;
+    height: 704.699px;
+}
+
+.torn-smilodons .project-image-container {
+    height: 610.044px;
+    width: 723.385px;
+}
+
+.logo-shadow {
+    box-shadow: 18px 4px 14.4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 1440px) {
+    .project-page-web {
+        transform-origin: top left;
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 1024px) {
+    .project-page-web {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-page-web {
+        transform: scale(0.4);
+    }
+    
+    .web-nav {
+        font-size: 60px;
+        gap: 80px;
+    }
+    
+    .works-title {
+        font-size: 120px;
+    }
+}
