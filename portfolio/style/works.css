@@ -4,8 +4,13 @@ body {
     padding: 0;
 }
 nav {
+    justify-content: center;
+    display: flex;
+    font-family: "alta-california", sans-serif;
+    color: #fAf8f7;
+    font-size: 90px;
     margin: 0px;
-    background-color: rgb(255, 0, 0);
+    background-color: #D72740;
     width: 100%;
     height: 50px;
     height: 100px;
