@@ -3,12 +3,14 @@ body {
     margin: 0;
     padding: 0;
 }
+
 nav {
+    border: 1px solid purple;
     justify-content: center;
     display: flex;
     font-family: "alta-california", sans-serif;
     color: #fAf8f7;
-    font-size: 90px;
+    font-size: 80px;
     margin: 0px;
     background-color: #D72740;
     width: 100%;
@@ -18,7 +20,8 @@ nav {
 main {
     height: 2161px;
     border: 3px solid brown;
-    background-image: url(../../background_paper.jpg);
+    background-image: url(../img/background_paper.jpg);
+    background-size: 80%;
     display: flex;
     
     
@@ -30,7 +33,7 @@ footer {
     height: 50px;
 }
 h1 {
-    transform: translate(0px,-40px);
+    transform: translate(20px,-40px);
     margin: 0;
     font-family: "alta-california", sans-serif;
     font-weight: 400;
@@ -75,8 +78,8 @@ h1 {
 .type_booklet {
     display: flex;
     background-color: rgb(255, 0, 111);
-    transform: translate(572px, 986px);
-    rotate: -18.15deg;
+    transform: translate(660px, 970px);
+    rotate: -10deg;
     position: absolute;
     z-index: 2;
     width: 502.98px;
@@ -86,10 +89,10 @@ h1 {
 .senior_posters {
     display: flex;
     background-color: rgb(30, 0, 255);
-    transform: translate(500px, 1298px);
+    transform: translate(500px, 1000px);
     rotate: 11.18deg;
     position: absolute;
-    z-index: 4;
+    z-index: 2;
     width: 533px;
     height: 710.65px;
 }
