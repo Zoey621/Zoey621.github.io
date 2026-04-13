@@ -44,9 +44,7 @@ main {
     border: 3px solid brown;
     background-image: url(../img/background_paper.jpg);
     background-size: 80%;
-    display: flex;
-    
-    
+    display: flex;  
 }
 
 footer {
