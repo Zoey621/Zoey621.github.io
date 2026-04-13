@@ -1,0 +1,110 @@
+*{
+    outline: 1px solid red;
+
+    box-sizing: border-box;
+}
+
+.flexH {
+    display: flex;
+    flex-direction: column;
+}
+
+.felxV {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-h-center{
+
+    align-items: center;
+}
+
+.flex-v-center {
+    justify-content: center;
+}
+
+section#hero {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+
+}
+
+.hero-text {
+    font-size: 3rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section#poster {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+#carosal-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+section#pcarousel {
+    background-color: blueviolet;
+
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+section#carousel >div:nth-of-type(odd) {
+    color: tomato (90, 152, 154);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+section#carousel >div:nth-of-type(even) {
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+@keyframe slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#poster {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr
+    }
+
+    section#poster > div {
+        grid-column: 2;
+        grid-row: 1;
+}
+
+}
+
+
+
