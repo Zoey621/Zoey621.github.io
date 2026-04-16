@@ -132,20 +132,28 @@ h1 {
     height: 777.34px;
     transition: .8s ease-in-out;
 }
+
 .type_booklet:hover {
-    transform: scale(1.1) translate(672px, -986px) rotate(10deg);
+    transform: scale(1.1) translate(1120px, -900px) rotate(10deg);
 }
+
 .senior_posters {
     display: flex;
     background-color: rgb(30, 0, 255);
-
+    transform: translate(175px, -1500px);
     rotate: 11.18deg;
     z-index: 2;
     width: 533px;
     height: 710.65px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+    
+    nav a:link { display: none;
+        translate: calc(0px -50px);
+        padding: 0px 50px;
+    }
+
     nav {
         font-size: 40px;
         height: 80px;
@@ -157,13 +165,21 @@ h1 {
     .smilodons {
         width: 311.69px;
         height: 255.02px;
-        transform: translate(45px,45px);
+        transform: translate(-1.29px,45px);
+    }
+
+    .smilodons:hover {
+        transform: scale(1.1) translate(-1.29px, 45px) rotate(-12deg);
     }
 
     .game_week {
         width: 243.67px;
         height: 317.08px;
-        transform:translate(24px,45px);
+        transform:translate(100px,5px);
+    }
+
+    .game_week:hover {
+        transform: scale(1.1) translate(190px,275px) rotate(10deg);
     }
 
     .hunan_house {
