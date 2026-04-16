@@ -58,7 +58,7 @@ footer {
     height: 50px;
 }
 h1 {
-    transform: translate(20px,-40px);
+    transform: translate(44px,0px);
     margin: 0;
     font-family: "alta-california", sans-serif;
     font-weight: 400;
@@ -110,11 +110,11 @@ h1 {
     display: flex;
     background-color: rgb(255, 149, 0);
     rotate: 7.4deg;
-    transform: translate(140px,-657px);
+    transform: translate(140px,-757px);
     z-index: 3;
     width: 540px;
     height: 715px;
-    transform: .8s ease-in-out;
+    transition: .8s ease-in-out;
     animation-name: hunan_house;
 }
 
@@ -125,19 +125,20 @@ h1 {
 .type_booklet {
     display: flex;
     background-color: rgb(255, 0, 111);
-    transform: translate(-1000px, 970px);
-    rotate: -10deg;
+    transform: translate(1120px, -900px);
+    rotate: -18.15deg;
     z-index: 2;
     width: 502.98px;
     height: 777.34px;
-    transform : .8s ease-in-out;
+    transition: .8s ease-in-out;
 }
-
-
+.type_booklet:hover {
+    transform: scale(1.1) translate(672px, -986px) rotate(10deg);
+}
 .senior_posters {
     display: flex;
     background-color: rgb(30, 0, 255);
-    transform: translate(500px, 1000px);
+
     rotate: 11.18deg;
     z-index: 2;
     width: 533px;
@@ -150,19 +151,21 @@ h1 {
         height: 80px;
     }
     h1 {
-        font-size: 100px;
-        transform: translate(20px,-20px);
+        font-size: 20px;
+        transform: translate(44px,0px);
     }
     .smilodons {
         width: 311.69px;
         height: 255.02px;
-        transform: translate(-45px,45px);
+        transform: translate(45px,45px);
     }
+
     .game_week {
         width: 243.67px;
         height: 317.08px;
-        transform:translate(354px,145px);
+        transform:translate(24px,45px);
     }
+
     .hunan_house {
         width: 270px;
         height: 357.5px;
