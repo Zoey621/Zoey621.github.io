@@ -14,12 +14,11 @@
 }
 
 body {
-    min-height: 100%;
     margin: 0;
     padding: 0;
     background-image: url(../img/background_paper.jpg);
-    background-size: 0%;
-    background-repeat: repeat-y 100%;
+    background-size: 100%;
+    background-repeat: repeat-y;
 }
 
 nav {
@@ -27,7 +26,6 @@ nav {
     justify-content: center;
     display: flex;
     font-family: "alta-california", sans-serif;
-    color: #fAf8f7;
     font-size: 80px;
     margin: 0px;
     background-color: #D72740;
@@ -127,6 +125,7 @@ h1 {
 }
 
 .type_booklet {
+    position: absolute;
     display: flex;
     background-color: rgb(255, 0, 111);
     transform: translate(900px, -1000px);
@@ -143,11 +142,12 @@ h1 {
 }
 
 .senior_posters {
+    position: absolute;
     display: flex;
     background-color: rgb(30, 0, 255);
-    transform: translate(-100px, -1500px);
+    transform: translate(90px, -900px);
     rotate: 11.18deg;
-    z-index: 2;
+    z-index: 5;
     width: 533px;
     height: 710.65px;
     transition: .8s ease-in-out;
@@ -163,6 +163,10 @@ h1 {
 
 
 @media (max-width: 768px) {
+
+    body {
+        background-size: 100%;
+    }
 
     nav a:link { display: none;
         translate: calc(0px -50px);
@@ -219,6 +223,7 @@ h1 {
     }
     
     .type_booklet {
+        position: relative;
         scale: 1.1;
         width: 268.84px;
         height: 415.48px;
@@ -230,13 +235,14 @@ h1 {
     }
 
     .senior_posters {
+        position: relative;
         scale: 1.1;
         width: 316.05px;
         height: 421.4px;
-        transform: translate(60px,-140px);
+        transform: translate(35px,-170px) rotate(0deg);
     }
 
     .senior_posters:hover {
-        transform: scale(1.1) translate(76px,-140px) rotate(-5deg);
+        transform: scale(1.1) translate(50px,-170px) rotate(-5deg);
     }
 }
