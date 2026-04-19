@@ -88,9 +88,52 @@ h1 {
     animation-name: smilodons;
 }
 
-
 .smilodons:hover {
    transform : scale(1.1) translate(130px, 90px) rotate(-12deg);
+}
+
+.smilodons-page {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.smilodons_description {
+    height: 248.43px;
+    width: 706.04px;
+    font-family: "reboto slab", serif;
+    justify-content: left;
+    font-size: 24px;
+    color: #fAf8f7; 
+    margin-left: 44px;
+}
+
+.smilodons-logo {
+    position: relative;
+    transform: translate(650px, -822px);
+    scale: calc(.6);
+}
+
+.scroll-gallery {
+    transform: translate(0px, 850px);
+    position: absolute;
+    display: flex;
+    overflow-x: auto; 
+    gap: 10px; 
+    padding: 10px;
+    width: 100%;
+    height: 650px; 
+}
+
+.scroll-gallery img {
+    flex-shrink: 0; 
+    width: auto; 
+    height: auto;
+    object-fit: cover;
+}
+
+.scroll-gallery::-webkit-scrollbar {
+    display: none;
 }
 
 .game_week {
@@ -107,6 +150,27 @@ h1 {
 
 .game_week:hover {
     transform: scale(1.1) translate(720px,-370px) rotate(10deg);
+}
+
+.phone {
+    display: flex;
+    transform: translate(500px, -100px);
+    z-index: 2;
+    scale: calc(1.1);
+    width: 1124.11px;
+    height: 750px;
+    /*background-color: chartreuse;*/
+}
+
+.scroll-gallery-game-week {
+    transform: translate(0px, 850px);
+    position: absolute;
+    display: flex;
+    overflow-x: auto; 
+    gap: 10px; 
+    padding: 10px;
+    width: 100%;
+    height: 650px; 
 }
 
 .hunan_house {
@@ -155,50 +219,7 @@ h1 {
     transition: .8s ease-in-out;
 }
 
-.smilodons-page {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-}
 
-.smilodons_description {
-    height: 248.43px;
-    width: 706.04px;
-    font-family: "reboto slab", serif;
-    justify-content: left;
-    font-size: 24px;
-    color: #fAf8f7; 
-    margin-left: 44px;
-}
-
-.smilodons-logo {
-    position: relative;
-    transform: translate(650px, -822px);
-    scale: calc(.6);
-    color: aqua;
-}
-
-.scroll-gallery {
-    transform: translate(0px, 900px);
-    position: absolute;
-    display: flex;
-    overflow-x: auto; 
-    gap: 10px; 
-    padding: 10px;
-    width: 100%;
-    height: 650px; 
-}
-
-.scroll-gallery img {
-    flex-shrink: 0; 
-    width: auto; 
-    height: auto;
-    object-fit: cover;
-}
-
-.scroll-gallery::-webkit-scrollbar {
-    display: none;
-}
 
 
 .menu {
@@ -213,7 +234,8 @@ h1 {
 @media (max-width: 768px) {
 
     body {
-        background-size: 100%;
+        background-size: cover;
+
     }
 
     nav a:link { display: none;
@@ -239,7 +261,15 @@ h1 {
         display: none;
     }
     
-
+    .details-page-h1 {
+        display: block;
+        font-family: "alta-california", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 88px;
+        color: #fAf8f7;
+        transform: translate(20px, 0px);
+    }
     .smilodons {
         scale: 1.1;
         width: 350.32px;
@@ -271,7 +301,7 @@ h1 {
 
     .smilodons-logo {
         position: relative;
-        transform: translate( -400px, -850px);
+        transform: translate( -400px, -1000px);
         scale: calc(.3);
         color: aqua;
     }
