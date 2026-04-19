@@ -19,6 +19,7 @@ body {
     background-image: url(../img/background_paper.jpg);
     background-size: 100%;
     background-repeat: repeat-y;
+    
 }
 
 nav {
@@ -48,6 +49,7 @@ main {
     border: 3px solid brown;
     display: flex;  
     flex-direction: column;
+    text-align: left;
 }
 
 footer {
@@ -66,7 +68,6 @@ h1 {
     color: #fAf8f7;
     display: flex;
     max-width: auto;
-    height: ;
     z-index: 8;
 }
 
@@ -152,6 +153,48 @@ h1 {
     height: 710.65px;
     transition: .8s ease-in-out;
 }
+
+
+.smilodons-page {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.smilodons_description {
+    height: 248.43px;
+    width: 706.04px;
+    font-family: "reboto slab", serif;
+    justify-content: left;
+    font-size: 24px;
+    color: #fAf8f7; 
+    margin-left: 44px;
+}
+
+.smilodons-logo {
+    position: relative;
+    transform: translate(650px, -800px);
+    scale: calc(.6);
+    color: aqua;
+}
+
+.scroll-gallery {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 10px; /* Space between images */
+    padding: 10px;
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+    background-color: #f0f0f0; /* Optional background */
+}
+
+.scroll-gallery img {
+    flex-shrink: 0; /* Prevents shrinking */
+    width: 200px; /* Fixed width for each image */
+    height: auto;
+    object-fit: cover;
+}
+
 
 .menu {
     display: none;
