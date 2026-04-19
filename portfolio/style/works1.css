@@ -238,6 +238,8 @@ h1 {
     h1 {
         display: none;
     }
+    
+
     .smilodons {
         scale: 1.1;
         width: 350.32px;
@@ -269,7 +271,7 @@ h1 {
 
     .smilodons-logo {
         position: relative;
-        transform: translate( -400px, -900px);
+        transform: translate( -400px, -850px);
         scale: calc(.3);
         color: aqua;
     }
