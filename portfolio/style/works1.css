@@ -152,6 +152,17 @@ h1 {
     transform: scale(1.1) translate(720px,-370px) rotate(10deg);
 }
 
+.game_week_description {
+    z-index: 6;
+    height: 248.43px;
+    width: 706.04px;
+    font-family: "reboto slab", serif;
+    justify-content: left;
+    font-size: 24px;
+    color: #fAf8f7; 
+    margin-left: 44px;
+}
+
 .phone {
     display: flex;
     transform: translate(500px, -100px);
@@ -163,38 +174,41 @@ h1 {
 }
 
 .game-sketch {
+    position: relative;
     display: flex;
     background-color: rgb(0, 255, 255);
-    transform: translate(200px, -400px);
+    transform: translate(600px, 0px);
     rotate: 6.55deg;
-    box-shadow: 10px 3px 10px 5px rgba(0,0,0,0.75);
     z-index: 1;
     width: 487.33px;
     height: 634.16px;
-    transition: .8s ease-in-out;
+
 }
 
-.game-week-SU{
+.game-week-SU {
+    scale: calc(.6);
+    display: flex;
     position: absolute;
-    transform: translate(-120px,-1800px);
+    transform: translate(-270px,-2600px);
     scale: calc(.6);
     rotate: 6.55deg;
     z-index: 1;
-    
-    transition: .8s ease-in-out;
+
 
 }
 
 .scroll-gallery-game-week {
+    display: flex;
     transform: translate(0px, -100px);
     position: relative;
     display: flex;
     overflow-x: auto; 
     gap: 10px; 
     padding: 10px;
-    width: 100%;
+    width: 1420px;
     height: 650px; 
     z-index: 1;
+    margin: 40px;
 }
 
 .scroll-gallery-game-week::-webkit-scrollbar {
@@ -247,9 +261,6 @@ h1 {
     transition: .8s ease-in-out;
 }
 
-
-
-
 .menu {
     display: none;
 }
@@ -298,6 +309,7 @@ h1 {
         color: #fAf8f7;
         transform: translate(20px, 0px);
     }
+
     .smilodons {
         scale: 1.1;
         width: 350.32px;
@@ -329,20 +341,20 @@ h1 {
 
     .smilodons-logo {
         position: relative;
-        transform: translate( -400px, -1000px);
-        scale: calc(.3);
+        transform: translate( -400px, -700px);
+        scale: calc(.35);
         color: aqua;
     }
 
     .scroll-gallery {
-        transform: translate(0px, 700px);
+        transform: translate(0px, 800px);
         position: absolute;
         display: flex;
         overflow-x: auto; 
         gap: 10px; 
         padding: 10px;
         width: 100%;
-        height: 350px; 
+        height: 450px; 
     }
 
     .scroll-gallery img {
