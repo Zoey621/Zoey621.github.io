@@ -125,14 +125,14 @@ h1 {
 }
 
 .scroll-gallery {
-    transform: translate(0px, 890px);
-    position: absolute;
+    margin-top: 600px;  /* Adjusted from translate to margin-top for relative positioning */
+    position: relative;  /* Changed from absolute to relative so footer adjusts below it */
     display: flex;
     overflow-x: auto; 
     gap: 10px; 
     padding: 10px;
     width: 100%;
-    height: 650px; 
+    height: 400px;  /* Reduced height */
 }
 
 .scroll-gallery img {
@@ -489,8 +489,8 @@ h1 {
 /* Imported Css */
 
 .container {
-  position: relative;
-  scale: 0.6;
+  position: sticky;
+  transform: translate(0px, -350px);
 }
 
 /* Hide the images by default */
@@ -532,8 +532,6 @@ h1 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-
 .row:after {
   content: "";
   align-items: center;
@@ -557,3 +555,60 @@ h1 {
 .demo:hover {
   opacity: 1;
 }
+
+/* About me page */
+
+.Z{ 
+    display: flex;
+    color: #fAf8f7;
+    font-size: 130pt;
+    font-family: "subway-new-york-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px;
+}
+
+.L {
+    display: flex;
+    color: #fAf8f7;
+    font-size: 130pt;
+    font-family: "subway-new-york-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 12px;
+    padding-right: 17px;
+}
+
+h2{
+    font-family: "venice-blvd", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    color: #fAf8f7;
+    padding: 20px;
+    padding-bottom: 10px;
+    margin-left: 44px;
+    width: 706.04px;
+;
+}
+
+.me_photo{
+    display: flex;
+    width: 555px;
+    height: 600px;
+    transform: translate(750px, -350px);
+}
+
+.paragraph_one {
+    transform: translate(0px, -20px);
+    display: flex;
+    z-index: 6;
+    height: 280px;
+    width: 706.04px;
+    font-family: "reboto slab", serif;
+    justify-content: left;
+    font-size: 24px;
+    color: #fAf8f7; 
+    margin-left: 44px;
+}
+
