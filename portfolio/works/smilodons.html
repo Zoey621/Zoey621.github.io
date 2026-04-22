@@ -29,15 +29,81 @@
             <img class="Logo" src="../img/works_photos/smilodons/Smilodons_Logo.png" alt="Smilodons Poster 1">
         </div>
          
-        <div class="scroll-gallery">
+        <!-- <div class="scroll-gallery">
             <img src="../img/works_photos/smilodons/STREET POSTER PNG FOR PNG.png" alt="Poster">
             <img src="../img/works_photos/smilodons/MockUp billboard smilodons WIP.png" alt="Billboard">
             <img src="../img/works_photos/smilodons/smilodons BUSH SHELTER WITH AWAY GAME PNG.png" alt="Bus-Stop">
-        </div>
+        </div> -->
+
+<div class="container">
+  <div class="mySlides"> 
+    <div class="numbertext">1 / 6</div>
+    <img src="../img/works_photos/smilodons/STREET POSTER PNG FOR PNG.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="../img/works_photos/smilodons/MockUp billboard smilodons WIP.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="../img/works_photos/smilodons/smilodons BUSH SHELTER WITH AWAY GAME PNG.png" style="width:100%">
+  </div>
+    
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
 
 
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="../img/works_photos/smilodons/STREET POSTER PNG FOR PNG.png" style="width:100%" onclick="currentSlide(1)" alt="Navy Game Week">
+    </div>
 
-    </main>
+    <div class="column">
+      <img class="demo cursor" src="../img/works_photos/smilodons/MockUp billboard smilodons WIP.png" style="width:100%" onclick="currentSlide(2)" alt="Lawrence Tech Game Week">
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="../img/works_photos/smilodons/smilodons BUSH SHELTER WITH AWAY GAME PNG.png" style="width:100%" onclick="currentSlide(3)" alt="NMU Game Week">
+    </div>
+
+  </div>
+</div>
+
+
+</main>
+
+    <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
     
     
 </body>
