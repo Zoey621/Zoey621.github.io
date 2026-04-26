@@ -463,9 +463,10 @@ input, textarea {
         font-family: "alta-california", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 88px;
+        font-size: 88pt;
         color: #fAf8f7;
         transform: translate(20px, 0px);
+        line-height: .87;
     }
 
     .smilodons {
@@ -489,21 +490,22 @@ input, textarea {
         width: auto;
         font-family: "reboto slab", serif;
         justify-content: left;
-        font-size: 18px;
+        font-size: 18pt;
         color: #fAf8f7; 
         margin: 20px;
        
     }
 
     .smilodons-logo {
+        height: 607px;
         position: relative;
-        transform: translate( -400px, -700px);
-        scale: calc(.35);
-        color: aqua;
+        transform: translate( -422px, -568px);
+        scale: calc(.30);
+        /* background-color: aqua; */
     }
 
     .scroll-gallery {
-        transform: translate(0px, 800px);
+        transform: translate(0px, 900px);
         position: absolute;
         display: flex;
         overflow-x: auto; 
