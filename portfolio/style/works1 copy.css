@@ -14,18 +14,11 @@
     aspect-ratio: 1/1;
 }
 
-:root {
-    --primary-color: #D72740;
-    --secondary-color: #fAf8f7;
-    --accent-color: #000000;
-    --background-color: #000000;
-    --font-family-primary: "alta-california", sans-serif;
-    --font-family-secondary: "reboto slab", serif;
-}
-
+@media screen and (max-width:980px)  {
+    
 body {
     position: relative;
-    background-color: var(--background-color);
+    background-color: #000000;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -41,7 +34,7 @@ nav {
     justify-content: center;
     display: flex;
     font-family: "alta-california", sans-serif;
-    font-size: 70pt;
+    font-size: 80px;
     margin: 0px;
     background-color: #D72740;
     width: 100%;
@@ -118,7 +111,6 @@ h1 {
 }
 
 .smilodons_description {
-    transform: translateY(-900px);
     height: 248.43px;
     width: 706.04px;
     font-family: "reboto slab", serif;
@@ -130,7 +122,7 @@ h1 {
 
 .smilodons-logo {
     position: relative;
-    transform: translate(620px, -522px);
+    transform: translate(650px, -822px);
     scale: calc(.6);
 }
 
@@ -435,11 +427,89 @@ input, textarea {
   border-radius: 0; /* removes rounded corners */
 }
 
+
+/* Imported Css */
+
+.container {
+  position: sticky;
+  transform: translate(0px, -350px);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row:after {
+  content: "";
+  align-items: center;
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  align-items: center;
+  float: left;
+  width: 33%;
+  height: auto;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+    
+}
+
+
+
 /*phonesize*/
 
-@media screen and(max-width: 760px) {
+
+ @media screen and (max-width: 2000px) {
 
     body {
+        overflow-x: hidden;
         background-size: cover;
 
     }
@@ -474,7 +544,7 @@ input, textarea {
         font-style: normal;
         font-size: 88pt;
         color: #fAf8f7;
-        transform: translate(20px, 0px);
+        transform: translate(10px, 0px);
         line-height: .87;
     }
 
@@ -495,11 +565,12 @@ input, textarea {
     }
 
     .smilodons_description {
-        height: 137px;
+        transform: translate(0px, -220px);
+        height: 280px;
         width: auto;
         font-family: "reboto slab", serif;
         justify-content: left;
-        font-size: 18pt;
+        font-size: 14pt;
         color: #fAf8f7; 
         margin: 20px;
        
@@ -508,14 +579,19 @@ input, textarea {
     .smilodons-logo {
         height: 607px;
         position: relative;
-        transform: translate( -422px, -568px);
+        transform: translate( -455px, -568px);
         scale: calc(.30);
         /* background-color: aqua; */
     }
 
+    .container {
+        scale: calc(.93);
+        transform: translate(0px,900px);
+
+    }
+
     .scroll-gallery {
-        transform: translate(0px, 900px);
-        position: absolute;
+        position: relative;
         display: flex;
         overflow-x: auto; 
         gap: 10px; 
@@ -685,7 +761,7 @@ input, textarea {
         z-index: 8;
     }
 
-    h2{
+    h2 {
         transform: translate(0px,100px);
         font-family: "venice-blvd", sans-serif;
         font-size: 24pt;
@@ -696,7 +772,7 @@ input, textarea {
         padding-bottom: 10px;
         margin-left: 44px;
         width: 706.04px;
-    ;
+    
     }
 
     .me_photo{
@@ -731,77 +807,5 @@ input, textarea {
         color: #fAf8f7; 
         margin-left: 44px;
     }
-
-
-    }
-
-
-/* Imported Css */
-
-.container {
-  position: sticky;
-  transform: translate(0px, -350px);
 }
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.row:after {
-  content: "";
-  align-items: center;
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  align-items: center;
-  float: left;
-  width: 33%;
-  height: auto;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
+     
