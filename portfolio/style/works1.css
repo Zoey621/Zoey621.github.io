@@ -101,6 +101,14 @@ h1 {
     z-index: 8;
 }
 
+p {
+    font-family: "reboto slab", serif;
+    justify-content: left;
+    font-size: 24px;
+    color: #fAf8f7; 
+    margin-left: 44px;
+}
+
 /*SMILODONS*/
 
 .smilodons {
@@ -130,7 +138,6 @@ h1 {
 }
 
 .smilodons_description {
-    transform: translateY(-900px);
     height: 25vh;
     width: 73vh;
     font-family: "reboto slab", serif;
@@ -252,7 +259,7 @@ h1 {
 
 .hunan_house {
     display: flex;
-    background-color: rgb(255, 149, 0);
+    /* background-color: rgb(255, 149, 0); */
     rotate: 7.4deg;
     transform: translate(200px,-757px);
     box-shadow: 10px 3px 10px 5px rgba(0,0,0,0.75);
@@ -265,6 +272,13 @@ h1 {
 
 .hunan_house:hover {
     transform: scale(1.1) translate(-30px,-657px) rotate(-10deg);
+}
+
+.hunan_house_description {
+    display: flex; 
+    z-index: 6;
+    height: 248.43px;
+    width: 706.04px;
 }
 
 .type_booklet {
@@ -356,8 +370,8 @@ h2{
 
 .me_photo{
     display: flex;
-    width: 740px;
-    height: 579px;
+    width: 79.57vh;
+    height: 62.258vh;
     transform: translate(760px, -492px);
 }
 
@@ -455,8 +469,6 @@ textarea:focus {
         background-size: cover;
     }
 
-    
-
     nav a:link { display: none;
         translate: calc(0px -50px);
         padding: 0px 50px;
@@ -464,8 +476,8 @@ textarea:focus {
 
     nav {
         justify-content: left;
-        font-size: 20px;
-        height: 80px;
+        font-size: 3.08vh;
+        height: 12.31vh;
     }
 
     .Mobile_Works {
@@ -485,15 +497,15 @@ textarea:focus {
         font-family: "alta-california", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 88pt;
+        font-size: 13vh;
         color: #fAf8f7;
         transform: translate(20px, 0px);
         line-height: .87;
     }
 
     .smilodons {
-        width: 350.32px;
-        height: 295.43px;
+        width: 58.38vh;
+        height: 45.45vh;
         transform: translate(25px,45px);
     }
 
@@ -510,13 +522,13 @@ textarea:focus {
     .smilodons_description {
         transform: translate(0px, -200px) rotate(.7deg);
         position: relative;
-        height: 137px;
+        height: 21.08vh;
         width: auto;
         font-family: "reboto slab", serif;
         justify-content: left;
         font-size: 2vh;
         color: #fAf8f7; 
-        margin: 20px;
+        margin: 3.08vh;
        
     }
 
@@ -569,7 +581,8 @@ textarea:focus {
     justify-content: left;
     font-size: 24px;
     color: #fAf8f7; 
-    margin-left: 44px;
+    margin: 3.08vh;
+
     }
 
     .phone {
