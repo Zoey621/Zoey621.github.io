@@ -699,12 +699,11 @@ textarea:focus {
     }
 
     .hunan_phone {
-        transform: rotate(-20deg); 
-        scale: calc(.6);
+        translate: translate(0px,100px);
+        position: relative;
+        rotate:-10deg; 
         display: flex;
-        width: 60vw;
-        height: 47vh;
-        transform: translate(-100px, 200px);
+        transform: translate(0px,0px);
     }
     
     .type_booklet {
