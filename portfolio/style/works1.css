@@ -58,7 +58,6 @@ nav a:visited,
 nav a:active {
     flex-direction: row;
     display: flex;
-    transform: translateX(-55px);
     text-decoration: none;
     color: #000000;
     padding: 0px 60px;
@@ -69,11 +68,6 @@ nav a:hover {
     animation-play-state: running;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
-}
-
-@keyframes nav-hover {
-   from {transform: rotate(0deg) translateX(-55px);}
-   to {transform: rotate(360deg) translateX(-55px);}
 }
 
 main {
@@ -143,7 +137,7 @@ p {
 }
 
 .smilodons_description {
-    transform: translate(0px, -75px) rotate(.7deg);
+    transform: translate(0px, -15px) rotate(.7deg);
     height: 50vh;
     width: 90vh;
     font-family: "reboto slab", serif;
@@ -155,7 +149,7 @@ p {
 
 .smilodons-logo {
     position: relative;
-    transform: translate(1270px, -10px);
+    transform: translate(1270px, -780px);
     scale: calc(.55); 
     height: 10vh;
     width: 20vh;
@@ -190,7 +184,7 @@ p {
 
 .game_week {
     display: flex;
-    background-color: rgb(255, 0, 255);
+    /* background-color: rgb(255, 0, 255); */
     transform:translate(708px,-370px);
     rotate: -6.55deg;
     box-shadow: 10px 3px 10px 5px rgba(0,0,0,0.75);
@@ -293,7 +287,7 @@ p {
 .type_booklet {
     position: absolute;
     display: flex;
-    background-color: rgb(255, 0, 111);
+    /* background-color: rgb(255, 0, 111); */
     transform: translate(900px, -1000px);
     box-shadow: -10px 3px 10px 5px rgba(0,0,0,0.75);
     rotate: -8.8deg;
@@ -310,13 +304,17 @@ p {
 .senior_posters {
     position: absolute;
     display: flex;
-    background-color: rgb(30, 0, 255);
+    /* background-color: rgb(30, 0, 255); */
     transform: translate(90px, -900px);
     rotate: 11.18deg;
     z-index: 5;
     width: 533px;
     height: 710.65px;
     transition: .8s ease-in-out;
+}
+
+.senior_posters:hover {
+    transform: scale(1.1) translate(20px, -800px) rotate(-12deg);
 }
 
 .menu {
@@ -503,6 +501,61 @@ textarea:focus {
         background-color: aqua;
     }
 
+    /* Contact Me Page */
+
+    .call-me {
+        display: flex;
+        width: 80vh;
+        height: 90vh;
+        transform: translate(40px, 0px);
+        margin-left: 800px;
+
+    }
+
+    .contact-form {
+        transform: translate(0px, 0px);
+        height: 40vh;
+        width: 80vh;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+
+    }
+
+    .my-email {
+        width: 80vh;
+        display: flex;
+        font-family: "alta-california", sans-serif;
+        font-style: normal;
+        font-size: 24pt;
+        color: #fAf8f7;
+        transform: translate(0px, 0px);
+        margin-left: 10px;
+        
+
+    }
+
+    .email {
+        transform: translate(0px, -7px);
+        width: auto;
+        display: flex;
+        font-family: "venice blvd", sans-serif;
+        justify-content: left;
+        font-size: 10pt;
+        color: #fAf8f7; 
+        margin-left: 10px;
+        z-index: 2;
+    }
+
+    .form {
+        display: flex;
+        transform: translate(0px, -300px);
+        position: relative;
+        background-color: aqua;
+    }
+
+    
+
 /*phonesize*/
 
 @media screen and (max-width: 768px) {
@@ -662,7 +715,7 @@ textarea:focus {
         display: flex;
         z-index: 6;
         height: 248.43px;
-        width: 706.04px;
+        width: auto;
         font-family: "reboto slab", serif;
         justify-content: left;
         font-size: 24px;
@@ -731,7 +784,7 @@ textarea:focus {
         display: flex; 
         z-index: 6;
         height: 248.43px;
-        width: 406.04px;
+        width: auto;
         font-family: "reboto slab", serif;
         justify-content: left;
         font-size: 3vh;
@@ -762,7 +815,7 @@ textarea:focus {
     .senior_posters {
         position: relative;
         width: 80%;
-        height: 48vh;
+        height: 50vh;
         transform: translate(0px,-170px) rotate(-4deg);
     }
 
@@ -896,11 +949,55 @@ textarea:focus {
         margin-left: 44px;
     }
 
+    /* Contact Me Page */
+
+    .call-me {
+        display: flex;
+        width: auto;
+        height: 47vh;
+        transform: translate(40px, 0px);
 
     }
 
-@media screen and (max-width: 2560px) {
+    .contact-form {
+        height: 40vh;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
 
-    
-}
+    }
 
+    .my-email {
+        width: auto;
+        display: flex;
+        font-family: "alta-california", sans-serif;
+        font-style: normal;
+        font-size: 24pt;
+        color: #fAf8f7;
+        transform: translate(0px, 0px);
+        margin-left: 10px;
+
+    }
+
+    .email {
+        transform: translate(0px, -7px);
+        width: auto;
+        display: flex;
+        font-family: "venice blvd", sans-serif;
+        justify-content: left;
+        font-size: 10pt;
+        color: #fAf8f7; 
+        margin-left: 10px;
+        z-index: 2;
+    }
+
+    .input, .textarea {
+        color: #fAf8f7; 
+        border: none;
+        padding: 10px;
+        font-size: 14px;
+        font-family: roboto, sans-serif;
+    }
+
+@media screen and (max-width: 2560px) { }
