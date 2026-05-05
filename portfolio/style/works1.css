@@ -251,8 +251,8 @@ p {
     overflow-x: auto; 
     gap: 10px; 
     padding: 10px;
-    width: 1420px;
-    height: 650px; 
+    width: 100%;
+    height: 400px; 
     z-index: 1;
     margin: 40px;
 }
@@ -470,6 +470,7 @@ textarea:focus {
 @media screen and (max-width: 768px) {
 
     body {
+        overflow-x: hidden;
         background-size: cover;
     }
 
@@ -505,37 +506,37 @@ textarea:focus {
         
         /* Style the button to remove default borders if desired */
     #openbutton {
-    border: orange solid 4px;
-    background: none;
-    cursor: pointer;
+        border: orange solid 4px;
+        background: none;
+        cursor: pointer;
     }
 
     #closebutton {
-    border: orange solid 4px;
-    transform: scale(1.2) ;
+        border: orange solid 4px;
+        transform: scale(1.2) ;
     }
     
     .overlay {
-    height: 100%;
-    width: 100%;
-    display: none;
-    position: fixed;
-    z-index: 20;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.2); /* Black w/opacity */
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.2); /* Black w/opacity */
     }
 
     
     .Overlay_Menu_Mobile {
-     transform: translate(0px, 0px);
-    display: flex;    
-    flex-direction: row;
-    align-items: right;
-    justify-content: flex-end;
-    height: 650px;
-    width: 248px;
-    background-color: aqua;
+        transform: translate(0px, 0px);
+        display: flex;    
+        flex-direction: row;
+        align-items: right;
+        justify-content: flex-end;
+        height: 650px;
+        width: 248px;
+        background-color: aqua;
     }
 
     .details-page-h1 {
@@ -620,15 +621,15 @@ textarea:focus {
     }
 
     .game_week_description {
-    display: flex;
-    z-index: 6;
-    height: 248.43px;
-    width: 706.04px;
-    font-family: "reboto slab", serif;
-    justify-content: left;
-    font-size: 24px;
-    color: #fAf8f7; 
-    margin: 3.08vh;
+        display: flex;
+        z-index: 6;
+        height: 248.43px;
+        width: 706.04px;
+        font-family: "reboto slab", serif;
+        justify-content: left;
+        font-size: 24px;
+        color: #fAf8f7; 
+        margin: 3.08vh;
 
     }
 
@@ -662,7 +663,7 @@ textarea:focus {
         width: 487.33px;
         height: 634.16px;
 
-        }
+    }
 
     .scroll-gallery-game-week {
         display: flex;
@@ -730,6 +731,41 @@ textarea:focus {
 
     .senior_posters:hover {
         transform: scale(1.1) translate(50px,-170px) rotate(-5deg);
+    }
+
+
+    .senior-gallary{
+        display: flex;
+        transform: translate(0px, 0px);
+        position: relative;
+        display: flex;
+        overflow-x: auto; 
+        gap: 10px; 
+        padding: 10px;
+        width: 100%;
+        height: 456px; 
+        z-index: 1;
+        margin-left: 10px;
+    }
+
+    .seniors_description {
+        translate: translate(0px, 130px) rotate(7deg);
+        display: flex; 
+        z-index: 6;
+        height: 200px;
+        width: 400px;
+        font-family: "reboto slab", serif;
+        justify-content: left;
+        font-size: 3vh;
+        color: #fAf8f7; 
+        margin-left: 20px;
+    }
+
+    .parent-photo {
+        display: flex;
+        transform: translate(20px, 0px);
+        position: relative;
+        margin-bottom: 10px;
     }
 
     /* About me page */
@@ -831,71 +867,3 @@ textarea:focus {
     
 }
 
-
-.container {
-  position: sticky;
-  transform: translate(0px, -350px);
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.row:after {
-  content: "";
-  align-items: center;
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  align-items: center;
-  float: left;
-  width: 33%;
-  height: auto;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
