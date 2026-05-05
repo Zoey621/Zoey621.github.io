@@ -138,44 +138,48 @@ p {
 }
 
 .smilodons_description {
-    height: 25vh;
-    width: 73vh;
+    transform: translate(0px, -75px) rotate(.7deg);
+    height: 50vh;
+    width: 90vh;
     font-family: "reboto slab", serif;
     justify-content: left;
-    font-size: 2.5vh;
+    font-size: 3.6vh;
     color: #fAf8f7; 
     margin-left: 44px;
 }
 
 .smilodons-logo {
     position: relative;
-    transform: translate(620px, -522px);
-     scale: calc(.3); 
-    height: 9vh;
-    width: 10vh;
+    transform: translate(1520px, -10px);
+    scale: calc(.5); 
+    height: 10vh;
+    width: 20vh;
 }
 
 .scroll-gallery {
-    margin-top: 600px;  /* Adjusted from translate to margin-top for relative positioning */
-    position: relative;  /* Changed from absolute to relative so footer adjusts below it */
+    transform: translate(0px, 70px);
+    margin-top: 70px;  
+    margin-bottom: 160px;
+    position: relative; 
     display: flex;
     overflow-x: auto; 
     gap: 10px; 
     padding: 10px;
     width: 100%;
-    height: 400px;  /* Reduced height */
+    height: 650px;  
 }
 
-.scroll-gallery img {
+/* .scroll-gallery img {
     flex-shrink: 0; 
     width: auto; 
     height: auto;
     object-fit: cover;
 }
+*/
 
 .scroll-gallery::-webkit-scrollbar {
     display: none;
-}
+} 
 
 /*SMILODONS END*/
 
@@ -534,9 +538,6 @@ textarea:focus {
     background-color: aqua;
     }
 
-
-
-
     .details-page-h1 {
         display: block;
         font-family: "alta-california", sans-serif;
@@ -565,7 +566,7 @@ textarea:focus {
     }
 
     .smilodons_description {
-        transform: translate(0px, -200px) rotate(.7deg);
+        transform: translate(0px, -10px) rotate(.7deg);
         position: relative;
         height: 21.08vh;
         width: auto;
@@ -580,8 +581,9 @@ textarea:focus {
     .smilodons-logo {
         height: 607px;
         position: relative;
-        transform: translate( -422px, -568px);
+        transform: translate( -12px, -568px);
         scale: calc(.30);
+        aspect-ratio: 83/70;
         /* background-color: aqua; */
     }
 
