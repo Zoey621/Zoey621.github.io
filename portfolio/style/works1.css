@@ -150,8 +150,8 @@ p {
 
 .smilodons-logo {
     position: relative;
-    transform: translate(1520px, -10px);
-    scale: calc(.5); 
+    transform: translate(1270px, -10px);
+    scale: calc(.55); 
     height: 10vh;
     width: 20vh;
 }
