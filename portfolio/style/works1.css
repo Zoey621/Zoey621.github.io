@@ -464,6 +464,39 @@ textarea:focus {
 }
 
 
+#openbutton {display: none;
+        border: orange solid 4px;
+        background: none;
+        cursor: pointer;
+    }
+
+    #closebutton {
+        border: orange solid 4px;
+        transform: scale(1.2) ;
+    }
+    
+    .overlay { display: none;
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.2); /* Black w/opacity */
+    }
+
+    
+    .Overlay_Menu_Mobile {display: none;
+        transform: translate(0px, 0px);
+        display: flex;    
+        flex-direction: row;
+        align-items: right;
+        justify-content: flex-end;
+        height: 650px;
+        width: 248px;
+        background-color: aqua;
+    }
 
 /*phonesize*/
 
