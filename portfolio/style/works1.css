@@ -585,8 +585,8 @@ textarea:focus {
 
     .smilodons {
         width: 100%;
-        height: 40vh;
-        transform: translate(25px,45px);
+        height: 38vh;
+        transform: translate(5px,45px);
     }
 
     .smilodons:hover {
@@ -644,9 +644,9 @@ textarea:focus {
     }
 
     .game_week {
-        width: 314.11px;
-        height: 392.64px;
-        transform:translate(70px,-70px);
+        width: 100%;
+        height: 48vh;
+        transform:translate(35px,-70px);
     }
 
     .game_week:hover {
@@ -717,9 +717,9 @@ textarea:focus {
     }
 
     .hunan_house {
-        width: 320px;
-        height: 400px;
-        transform: translate(44px,-140px);
+        width: 68%;
+        height: 48vh;
+        transform: translate(14px,-140px);
     }
 
     .hunan_house_description {
