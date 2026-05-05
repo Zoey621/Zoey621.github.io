@@ -584,8 +584,8 @@ textarea:focus {
     }
 
     .smilodons {
-        width: 58.38vh;
-        height: 45.45vh;
+        width: 100%;
+        height: 43vh;
         transform: translate(25px,45px);
     }
 
@@ -785,8 +785,8 @@ textarea:focus {
         translate: translate(0px, 130px) rotate(7deg);
         display: flex; 
         z-index: 6;
-        height: 200px;
-        width: 400px;
+        height: 150px;
+        width: 100%;
         font-family: "reboto slab", serif;
         justify-content: left;
         font-size: 3vh;
