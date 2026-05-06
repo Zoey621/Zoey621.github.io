@@ -1033,11 +1033,10 @@ textarea:focus {
         
     }
 
-    .welcome-main {
-        height: auto;
-    }
+    /* .welcome-main {
+    } */
     .welcome {
-        transform: transldonate(10px,15px);
+        transform: translate(10px,15px);
         margin: 0;
         font-family: "alta-california", sans-serif;
         font-weight: 400;
