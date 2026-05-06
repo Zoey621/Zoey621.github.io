@@ -6,7 +6,7 @@
 
 #grid-layout {
     background-color: aqua;
-    border: 4px solid red;
+    /* border: 4px solid red; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
@@ -36,7 +36,6 @@ body {
 }
 
 nav {
-    border: 1px solid purple;
     justify-content: center;
     display: flex;
     font-family: "alta-california", sans-serif;
@@ -73,7 +72,6 @@ nav a:hover {
 
 main {
     width: 100%;
-    border: 3px solid brown;
     display: flex;  
     flex-direction: column;
     text-align: left;
