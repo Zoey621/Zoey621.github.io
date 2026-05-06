@@ -10,15 +10,54 @@
 
 </head>
 <body class="smilodons-page">
-    <nav>
+   <nav class="buttons">
         <h1 class="Mobile_Works">Works</h1>
-        <button class="menu" onclick="openOverlay()">Menu</button>
-        <a href="../welcome.html">Home </a>
-        <a href="../works/works.html">Works </a>
-        <a href="../about_me.html">About me </a>
+        <a href="../welcome.html">Home</a>
+        <a href="works.html"> Works</a>
+        <a href="about_me.html">About Me</a>
         <a href="../contact_me.html">Contact</a>
-        
-    </nav>
+
+        <button id="openBtn" class="burger-btn">
+            <img src="../img/icons/Burger Menu.svg" width="50" height="50" alt="Three horizontal lines representing the burger menu icon to open navigation" style="pointer-events: none;" />
+        </button>
+
+     </nav> 
+
+     
+     <div class="backdrop" id="backdrop"></div>
+
+    
+     <div class="drawer" id="drawer">
+         <button id="closeBtn">✕</button>
+         <a href="../welcome.html">Home</a>
+         <a href="../works/works.html">Works</a>
+         <a href="../contact_me.html">Contact</a>
+         <a href="../about_me.html">About Me</a>
+     </div>
+
+    <script>
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const drawer = document.getElementById('drawer');
+        const backdrop = document.getElementById('backdrop');
+
+    
+        openBtn.addEventListener('click', () => {
+            drawer.classList.add('active');
+            backdrop.classList.add('active');
+        });
+    
+        closeBtn.addEventListener('click', () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+        });
+
+        backdrop.addEventListener('click', () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+            
+        });
+    </script>
 
     <main class="smilodons-main">
          <h1 class="details-page-h1">PWHL Smilodons</h1>
