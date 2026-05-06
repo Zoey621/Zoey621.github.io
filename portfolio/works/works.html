@@ -17,31 +17,27 @@
  <body class="container">
    <nav class="buttons">
         <h1 class="Mobile_Works">Home</h1>
-        <a href="welcome.html">Home</a>
-        <a href="works/works.html"> Works</a>
-        <a href="contact_me.html">Contact</a>
-        <a href="about_me.html">About Me</a>
+        <a href="../welcome.html">Home</a>
+        <a href="works.html"> Works</a>
+        <a href="../contact_me.html">Contact</a>
+        <a href="../about_me.html">About Me</a>
 
         <button id="openBtn" class="burger-btn">
-            <img src="img/icons/Burger Menu.svg" width="50" height="50" alt="Open menu" style="pointer-events: none;" />
+            <img src="../img/icons/Burger Menu.svg" width="50" height="50" alt="Three horizontal lines representing the burger menu icon to open navigation" style="pointer-events: none;" />
         </button>
 
      </nav> 
 
-     <h1>Welcome</h1>
      
-    
-
-     <!-- Backdrop overlay -->
      <div class="backdrop" id="backdrop"></div>
 
     
      <div class="drawer" id="drawer">
          <button id="closeBtn">✕</button>
-         <a href="welcome.html">Home</a>
-         <a href="works/works.html">Works</a>
-         <a href="contact.html">Contact</a>
-         <a href="about_me.html">About Me</a>
+         <a href="../welcome.html">Home</a>
+         <a href="../works/works.html">Works</a>
+         <a href="../contact_me.html">Contact</a>
+         <a href="../about_me.html">About Me</a>
      </div>
 
     <script>
@@ -50,19 +46,17 @@
         const drawer = document.getElementById('drawer');
         const backdrop = document.getElementById('backdrop');
 
-        // Open drawer
+    
         openBtn.addEventListener('click', () => {
             drawer.classList.add('active');
             backdrop.classList.add('active');
         });
-
-        // Close drawer
+    
         closeBtn.addEventListener('click', () => {
             drawer.classList.remove('active');
             backdrop.classList.remove('active');
         });
 
-        // Close drawer when clicking backdrop
         backdrop.addEventListener('click', () => {
             drawer.classList.remove('active');
             backdrop.classList.remove('active');
@@ -76,31 +70,31 @@
         
        <a href="smilodons.html">
             <div class="smilodons">
-                <img src="../img/works_photos/smilodons/Torn Smilodons logo.png" alt="Smilodons">
+                <img src="../img/works_photos/smilodons/Torn Smilodons logo.png" alt="Smilodons logo with a distressed, torn texture effect on the text, creating a rugged and dynamic visual appearance">
             </div>
         </a>
 
         <a href="game_week.html">
             <div class="game_week">
-                    <img src="../img/works_photos/game_week/Game week cover image.png" alt="Game Week">
+                    <img src="../img/works_photos/game_week/Game week cover image.png" alt="Game Week cover design featuring bold typography and vibrant colors promoting an exciting gaming event">
             </div>
         </a>
 
         <a href="hunan_house.html">
             <div class="hunan_house">
-                <img src="../img/works_photos/hunan_house/Ditressed Hunan House Ad.png" alt="Hunan House">
+                <img src="../img/works_photos/hunan_house/Ditressed Hunan House Ad.png" alt="Hunan House restaurant advertisement with distressed artistic styling and weathered texture, promoting Asian cuisine dining">
             </div>
         </a>
 
         <a href="type_booklet.html">
             <div class="type_booklet">
-                <img src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing.png" alt="Type Booklet">
+                <img src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing.png" alt="Typography booklet cover showcasing typographic design principles and font variations with carefully composed layout">
             </div>
         </a>
 
         <a href="seniors.html">
             <div class="senior_posters">
-                <img src="../img/works_photos/senior_posters/Alyssa Gray Senior Poster.png" alt="Seniors">
+                <img src="../img/works_photos/senior_posters/Alyssa Gray Senior Poster.png" alt="Senior class portrait poster for Alyssa Gray featuring a professional commemorative design celebrating graduation achievement">
             </div>
         </a>
 
