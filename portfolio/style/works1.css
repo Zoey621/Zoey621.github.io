@@ -640,6 +640,7 @@ textarea:focus {
     font-size: 24pt;
     color: #fAf8f7; 
 }
+
 .welcome-container {
     width: 100%;
   overflow: hidden;
@@ -1060,7 +1061,7 @@ textarea:focus {
     }
 
     h2{
-        transform: translate(0px, 240px);
+        transform: translate(0px, 260px);
         font-family: "venice-blvd", sans-serif;
         font-size: 24pt;
         font-weight: 700;
@@ -1076,7 +1077,7 @@ textarea:focus {
     .me_photo{
         display: flex;
         width: auto;
-        height: 40vh;
+        height: 38vh;
         transform: translate(-10px, -500px);
     }
 
