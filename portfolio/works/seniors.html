@@ -12,17 +12,57 @@
     <link rel="stylesheet" href="https://use.typekit.net/xyw3hfp.css">
 </head>
 <body>
-    <nav class="buttons">
-        <h1 class="Mobile_Works">Works</h1>
-        <a href="welcome.html">Home</a>
-        <a href="works/works.html"> Works</a>
-        <a href="about_me.html">About Me</a>
-        <a href="contact.html">Contact</a>
+      <nav class="buttons">
+        <h1 class="Mobile_Works">Home</h1>
+        <a href="../welcome.html">Home</a>
+        <a href="works.html"> Works</a>
+        <a href="../about_me.html">About Me</a>
+        <a href="../contact_me.html">Contact</a>
+        
 
         <button id="openBtn" class="burger-btn">
-            <img src="img/icons/Burger Menu.svg" width="50" height="50" alt="Open menu" style="pointer-events: none;" />
+            <img src="../img/icons/Burger Menu.svg" width="50" height="50" alt="Open menu" style="pointer-events: none;" />
         </button>
-    </nav>
+
+     </nav> 
+     
+     <div class="backdrop" id="backdrop"></div>
+
+    
+     <div class="drawer" id="drawer">
+        <button id="closeBtn">✕</button>
+        <a href="../welcome.html">Home</a>
+        <a href="works.html">Works</a>
+        <a href="../about_me.html">About Me</a>
+        <a href="../contact_me.html">Contact</a>
+         
+     </div>
+
+    <script>
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const drawer = document.getElementById('drawer');
+        const backdrop = document.getElementById('backdrop');
+
+        // Open drawer
+        openBtn.addEventListener('click', () => {
+            drawer.classList.add('active');
+            backdrop.classList.add('active');
+        });
+
+        // Close drawer
+        closeBtn.addEventListener('click', () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+        });
+
+        // Close drawer when clicking backdrop
+        backdrop.addEventListener('click', () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+            
+        });
+    </script>
 
     <main class="seniors-main">
          <h1 class="details-page-h1">Seniors</h1>
@@ -32,13 +72,14 @@
         <div class="senior-gallary">
             <img src="../img/works_photos/senior_posters/Deklynn Senior Poster.png" alt="Deklynn Poster">
             <img src="../img/works_photos/senior_posters/Carlya Senior Poster.png" alt="Carlya Poster">
-            <img src="../img/works_photos/senior_posters/Alyssa Gray Senior Poster.png" alt="Alyssa Gray Poster">
             <img src="../img/works_photos/senior_posters/Brooke Senior Poster.png" alt="Brooke Poster">
-            <img src="../img/works_photos/senior_posters/Emily Senior Poster.png" alt="Emily Poster">
+            <img src="../img/works_photos/senior_posters/Katelyn Senior Poster.png" alt="Katelyn Poster">
+            <img src="../img/works_photos/senior_posters/Kylie Del Re Senior Poster.png" alt="Kylie Del Re Poster">
         </div>
 
         <div class="parent-photo"> 
-            <img class="Logo" src="../img/works_photos/senior_posters/Carly Parents Photo.png" alt="Pareent Poster 1">
+            <img class="Logo" src="../img/works_photos/senior_posters/55100674767_6a4baa30ca_o.jpg" alt="Pareent Poster 1">
+            <img class="Logo" src="../img/works_photos/senior_posters/55101555831_9fa2e98390_o.jpg" alt="Parent Poster 2">
         </div> 
 
         

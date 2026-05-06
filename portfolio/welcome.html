@@ -16,10 +16,10 @@
 <body class="welcome-container">
    <nav class="buttons">
         <h1 class="Mobile_Works">Home</h1>
-        <a href="../welcome.html">Home</a>
+        <a href="welcome.html">Home</a>
         <a href="works/works.html"> Works</a>
         <a href="about_me.html">About Me</a>
-        <a href="../contact_me.html">Contact</a>
+        <a href="contact_me.html">Contact</a>
         
 
         <button id="openBtn" class="burger-btn">
@@ -51,19 +51,19 @@
         const drawer = document.getElementById('drawer');
         const backdrop = document.getElementById('backdrop');
 
-        // Open drawer
+      
         openBtn.addEventListener('click', () => {
             drawer.classList.add('active');
             backdrop.classList.add('active');
         });
 
-        // Close drawer
+        
         closeBtn.addEventListener('click', () => {
             drawer.classList.remove('active');
             backdrop.classList.remove('active');
         });
 
-        // Close drawer when clicking backdrop
+       
         backdrop.addEventListener('click', () => {
             drawer.classList.remove('active');
             backdrop.classList.remove('active');

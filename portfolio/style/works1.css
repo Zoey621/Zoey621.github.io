@@ -344,6 +344,51 @@ p {
     transform: scale(1.1) translate(20px, -800px) rotate(-12deg);
 }
 
+
+.senior-gallary{
+    display: flex;
+    transform: translate(0px, 0px);
+    position: relative;
+    display: flex;
+    overflow-x: auto; 
+    gap: 10px; 
+    padding: 10px;
+    width: 100%;
+    height: 640px; 
+    z-index: 1;
+    margin-left: 40px;
+}
+
+.senior-gallary ::-webkit-scrollbar {
+    display: none;
+}
+
+.seniors_description {
+    translate: translate(0px, 130px) rotate(5deg);
+    rotate: calc(1.5deg);
+    display: flex; 
+    z-index: 6;
+    height: auto;
+    width: 706.04px;
+    font-family: "reboto slab", serif;
+    justify-content: left;
+    font-size: 3vh;
+    color: #fAf8f7; 
+    margin-left: 44px;
+}
+
+.parent-photo {
+    height: 120vh;
+    width: auto;
+    display: flex;
+    transform: translate(0px, 0px);
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 44px;
+    gap: 20px;
+}
+
 .menu {
     display: none;
 }
@@ -848,10 +893,27 @@ textarea:focus {
         height: 50vh;
         transform: translate(95px,-140px);
     }
+
+    .type-header {
+        display: flex;
+        position: relative;
+        transform: translate(0px, 0px);
+        font-family: 
+        justify-content: left;
+        font-size: 3.6vh;
+        color: #fAf8f7; 
+        margin-left: 10px;
+    }
+
+    .type_booklet-pages{
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        height: 50vh;
+        width: auto;
+        overflow-x: auto;
+    }
     
-    /* .type_booklet:hover {
-        transform: scale(1.14) translate(130px,-140px) rotate(10deg);
-    } */
 
     .senior_posters {
         position: relative;
@@ -860,9 +922,6 @@ textarea:focus {
         transform: translate(0px,-170px) rotate(-4deg);
     }
 
-    .senior_posters:hover {
-        transform: scale(1.1) translate(50px,-170px) rotate(-5deg);
-    }
 
 
     .senior-gallary{
@@ -1071,6 +1130,7 @@ textarea:focus {
     .welcome-main {
         overflow: ;
     } 
+
     .welcome {
         transform: translate(10px,15px);
         margin: 0;

@@ -29,7 +29,6 @@
 
     
 
-     <!-- Backdrop overlay -->
      <div class="backdrop" id="backdrop"></div>
 
     
@@ -47,26 +46,26 @@
         const drawer = document.getElementById('drawer');
         const backdrop = document.getElementById('backdrop');
 
-        // Open drawer
+   
         openBtn.addEventListener('click', () => {
             drawer.classList.add('active');
             backdrop.classList.add('active');
         });
 
-        // Close drawer
+      
         closeBtn.addEventListener('click', () => {
             drawer.classList.remove('active');
             backdrop.classList.remove('active');
         });
 
-        // Close drawer when clicking backdrop
+       
         backdrop.addEventListener('click', () => {
             drawer.classList.remove('active');
             backdrop.classList.remove('active');
             
         });
     </script>
-    
+
         <main>
 
              <h1 class="my_name">

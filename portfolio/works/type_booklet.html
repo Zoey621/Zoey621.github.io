@@ -10,17 +10,94 @@
 </head>
 <body>
    <nav class="buttons">
-        <h1 class="Mobile_Works">Works</h1>
-        <a href="welcome.html">Home</a>
-        <a href="works/works.html"> Works</a>
-        <a href="about_me.html">About Me</a>
-        <a href="contact.html">Contact</a>
+        <h1 class="Mobile_Works">Home</h1>
+        <a href="../welcome.html">Home</a>
+        <a href="works.html"> Works</a>
+        <a href="../about_me.html">About Me</a>
+        <a href="../contact_me.html">Contact</a>
+        
 
         <button id="openBtn" class="burger-btn">
-            <img src="img/icons/Burger Menu.svg" width="50" height="50" alt="Open menu" style="pointer-events: none;" />
+            <img src="../img/icons/Burger Menu.svg" width="50" height="50" alt="Open menu" style="pointer-events: none;" />
         </button>
-    </nav>
+
+     </nav> 
+
+     <div class="backdrop" id="backdrop"></div>
+
     
+     <div class="drawer" id="drawer">
+         <button id="closeBtn">✕</button>
+         <a href="../welcome.html">Home</a>
+         <a href="works.html">Works</a>
+        <a href="../about_me.html">About Me</a>
+         <a href="../contact_me.html">Contact</a>
+         
+     </div>
+
+    <script>
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const drawer = document.getElementById('drawer');
+        const backdrop = document.getElementById('backdrop');
+
+      
+        openBtn.addEventListener('click', () => {
+            drawer.classList.add('active');
+            backdrop.classList.add('active');
+        });
+
+        
+        closeBtn.addEventListener('click', () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+        });
+
+       
+        backdrop.addEventListener('click', () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+            
+        });
+    </script>
+
+    <main>
+
+        <h1 class="details-page-h1">Suddnely a Mirror</h1>
+
+        <h2>This American Life: Episode 860 Suddenly A Mirror</h2>
+
+        <p>This was my American Life podcast book for episode 860, created during my Advanced Typography class. The instructions for the assignment were to create a printed booklet using only type, with the assistance of shapes and colors, but no clear illustrations other than on the covers.
+
+        I wanted to create something at was all out punk and get crazy with it. Often, because of my job, I focus so much on the readability and the style guide rules, I don't have a chance to break out and create something I find super cool. This was my chance to do that, and I took it.</p>
+
+
+        <div class="type_booklet-pages">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing.png" alt="Type Booklet 1">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing2.png" alt="Type Booklet 2">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing3.png" alt="Type Booklet 3">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing4.png" alt="Type Booklet 4">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing5.png" alt="Type Booklet 5">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing6.png" alt="Type Booklet 6">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing7.png" alt="Type Booklet 7">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing8.png" alt="Type Booklet 8">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing9.png" alt="Type Booklet 9">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing10.png" alt="Type Booklet 10">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing11.png" alt="Type Booklet 11">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing12.png" alt="Type Booklet 12">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing13.png" alt="Type Booklet 13">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing14.png" alt="Type Booklet 14">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing15.png" alt="Type Booklet 15">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing pt2.png" alt="Type Booklet 2">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing pt22.png" alt="Type Booklet 16">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing pt23.png" alt="Type Booklet 17">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing pt24.png" alt="Type Booklet 18">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing pt25.png" alt="Type Booklet 19">
+            <img class="Logo" src="../img/works_photos/suddenly_mirror/Booklet Correct Sizing pt26.png" alt="Type Booklet 20">
+
+        </div>
+
+    </main>
 </body>
 <footer></footer>
 </html>
