@@ -284,32 +284,32 @@ p {
     width: 706.04px;
 }
 
-   .hunan_phone {
-        position: relative;
-        rotate:-10deg; 
-        display: none;
-        transform: translate(150px,15px);
-        height: 120vh;
-        width: 60%;
-        margin: 10px;
-    }
+.hunan_phone {
+    position: relative;
+    rotate:-10deg; 
+    display: none;
+    transform: translate(150px,15px);
+    height: 120vh;
+    width: 60%;
+    margin: 10px;
+}
 
-    .hunan-ad {
-        position: relative;
-        display: flex;
-        transform: translate(805px, -305px);
-        height: 100vh;
-        width: 40%;
-        margin: 10px;
-    }
+.hunan-ad {
+    position: relative;
+    display: flex;
+    transform: translate(805px, -305px);
+    height: 100vh;
+    width: 40%;
+    margin: 10px;
+}
 
-    .hunan-ad-web { display: block;
-        position: relative;
-        transform: translate(-1400px,-3200px);
-        scale: calc(.33);
-        height: 20vh;
-        width: 40%;
-    }
+.hunan-ad-web { display: block;
+    position: relative;
+    transform: translate(-1400px,-3200px);
+    scale: calc(.33);
+    height: 20vh;
+    width: 40%;
+}
 
 .type_booklet {
     position: absolute;
@@ -496,74 +496,74 @@ textarea:focus {
     /* Contact Me Page */
 
 .call-me {
-        display: flex;
-        width: 80vh;
-        height: 90vh;
-        transform: translate(40px, 0px);
-        margin-left: 800px;
+    display: flex;
+    width: 80vh;
+    height: 90vh;
+    transform: translate(40px, 0px);
+    margin-left: 800px;
 
 }
 
 .contact-form {
-        transform: translate(0px, 0px);
-        height: 40vh;
-        width: 100vh;
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
+    transform: translate(0px, 0px);
+    height: 40vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 
 }
 
 .my-email {
-        width: auto;
-        display: flex;
-        font-family: "alta-california", sans-serif;
-        font-style: normal;
-        font-size: 170pt;
-        color: #fAf8f7;
-        transform: translate(0px, -660px);
-        margin-left: 44px;
+    width: auto;
+    display: flex;
+    font-family: "alta-california", sans-serif;
+    font-style: normal;
+    font-size: 170pt;
+    color: #fAf8f7;
+    transform: translate(0px, -660px);
+    margin-left: 44px;
         
 
 }
 
 .email {
-        transform: translate(0px, -700px) rotate(2deg);
-        width: auto;
-        display: flex;
-        font-family: "venice blvd", sans-serif;
-        justify-content: left;
-        font-size: 40pt;
-        color: #fAf8f7; 
-        margin-left: 44px;
-        z-index: 2;
+    transform: translate(0px, -700px) rotate(2deg);
+    width: auto;
+    display: flex;
+    font-family: "venice blvd", sans-serif;
+    justify-content: left;
+    font-size: 40pt;
+    color: #fAf8f7; 
+    margin-left: 44px;
+    z-index: 2;
 }
 
 .form {
-        display: flex;
-        transform: translate(0px, -750px);
-        margin-left: 44px;
-        position: relative;
-        /* background-color: aqua; */
+    display: flex;
+    transform: translate(0px, -750px);
+    margin-left: 44px;
+    position: relative;
+    /* background-color: aqua; */
 }
 
 .submit-button {
-        display: flex;
-        transform: translate(630px, -750px);
-        margin-left: 44px;
-        position: relative;
-        background-color: #D72740;
-        cursor: pointer;
-        font-family: "reboto slab", serif;
-        font-size: 24pt;
-        color: #fAf8f7; 
+    display: flex;
+    transform: translate(630px, -750px);
+    margin-left: 44px;
+    position: relative;
+    background-color: #D72740;
+    cursor: pointer;
+    font-family: "reboto slab", serif;
+    font-size: 24pt;
+    color: #fAf8f7; 
 }
 
 #openBtn {
-        display: none;   
-        background: none;
-        cursor: pointer;
-    }
+    display: none;   
+    background: none;
+    cursor: pointer;
+}
 
 .drawer {display: none;}
 
@@ -1031,6 +1031,29 @@ textarea:focus {
         font-size: 20pt;
         color: #fAf8f7; 
         
+    }
+
+    .welcome-main {
+        height: auto;
+    }
+    .welcome {
+        transform: translate(44px,0px);
+        margin: 0;
+        font-family: "alta-california", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18vh;
+        color: #fAf8f7;
+        display: flex;
+        max-width: auto;
+        z-index: 8;
+    }
+
+    .spikes {
+        transform: translate(0px, 80px);
+        position: relative;
+        scale: calc(1.4);
+    
     }
 
     .footer {
