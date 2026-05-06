@@ -14,18 +14,61 @@
 
 </head>
 
-<body>
-    <nav class="buttons">
-        <h1 class="Mobile_Works">Works</h1>
+ <body class="container">
+   <nav class="buttons">
+        <h1 class="Mobile_Works">Home</h1>
         <a href="welcome.html">Home</a>
         <a href="works/works.html"> Works</a>
+        <a href="contact_me.html">Contact</a>
         <a href="about_me.html">About Me</a>
-        <a href="contact.html">Contact</a>
 
         <button id="openBtn" class="burger-btn">
             <img src="img/icons/Burger Menu.svg" width="50" height="50" alt="Open menu" style="pointer-events: none;" />
         </button>
-    </nav>
+
+     </nav> 
+
+     <h1>Welcome</h1>
+     
+    
+
+     <!-- Backdrop overlay -->
+     <div class="backdrop" id="backdrop"></div>
+
+    
+     <div class="drawer" id="drawer">
+         <button id="closeBtn">✕</button>
+         <a href="welcome.html">Home</a>
+         <a href="works/works.html">Works</a>
+         <a href="contact.html">Contact</a>
+         <a href="about_me.html">About Me</a>
+     </div>
+
+    <script>
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const drawer = document.getElementById('drawer');
+        const backdrop = document.getElementById('backdrop');
+
+        // Open drawer
+        openBtn.addEventListener('click', () => {
+            drawer.classList.add('active');
+            backdrop.classList.add('active');
+        });
+
+        // Close drawer
+        closeBtn.addEventListener('click', () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+        });
+
+        // Close drawer when clicking backdrop
+        backdrop.addEventListener('click', () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+            
+        });
+    </script>
     
     <main>
         

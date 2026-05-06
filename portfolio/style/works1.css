@@ -566,7 +566,15 @@ textarea:focus {
         font-size: 24pt;
         color: #fAf8f7; 
 }
-    
+
+#openBtn {
+        display: none;
+        border: orange solid 4px;
+        background: none;
+        cursor: pointer;
+    }
+
+.drawer {display: none;}
 
 /*phonesize*/
 
@@ -996,6 +1004,13 @@ textarea:focus {
         margin-top: 0px;
         display: none;
 
+    }
+
+    #openBtn {
+        display: block;
+        border: orange solid 4px;
+        background: none;
+        cursor: pointer;
     }
 
 .buttons {

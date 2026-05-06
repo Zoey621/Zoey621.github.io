@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/xyw3hfp.css">
 </head>
 
-<body>
+<body class="container">
 
    <nav class="buttons">
         <h1 class="Mobile_Works">Works</h1>
@@ -25,6 +25,44 @@
             <img src="img/icons/Burger Menu.svg" width="50" height="50" alt="Open menu" style="pointer-events: none;" />
         </button>
     </nav>
+    <!-- Backdrop overlay -->
+     <div class="backdrop" id="backdrop"></div>
+
+    
+     <div class="drawer" id="drawer">
+         <button id="closeBtn">✕</button>
+         <a href="welcome.html">Home</a>
+         <a href="works/works.html">Works</a>
+         <a href="contact.html">Contact</a>
+         <a href="about_me.html">About Me</a>
+     </div>
+
+    <script>
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const drawer = document.getElementById('drawer');
+        const backdrop = document.getElementById('backdrop');
+
+        // Open drawer
+        openBtn.addEventListener('click', () => {
+            drawer.classList.add('active');
+            backdrop.classList.add('active');
+        });
+
+        // Close drawer
+        closeBtn.addEventListener('click', () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+        });
+
+        // Close drawer when clicking backdrop
+        backdrop.addEventListener('click', () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+            
+        });
+    </script>
+
     <div>
       <img class="call-me" src="img/contact_me_photos/IMG_0503.png" alt="Contact Me Logo">
     </div>
