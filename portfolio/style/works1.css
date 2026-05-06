@@ -558,10 +558,11 @@ textarea:focus {
     font-size: 24pt;
     color: #fAf8f7; 
 }
+.welcome-container {
+    width: 100%;
+  overflow: hidden;
+}
 
-.welcome-main {
-    overflow: ;
-} 
 .welcome {
     transform: translate(10px,15px);
     margin: 0;
@@ -576,18 +577,19 @@ textarea:focus {
 }
 
 .instagram {
-    transform: translate(950px, 300px);
+    transform: translate(1020px, 180px);
     position: relative;
-    height: 30vh;
-    width: 40vw;
+    height: 25vh;
+    width: 35vw;
     scale: calc(1.1);
     z-index: 2;
 }
 
 .spikes {
-    transform: translate(620px, -1400px);
+    transform: translate(1150px, -900px);
     position: relative;
-    scale: calc(.55);
+    height: 5vh;
+    scale: calc(.4);
 
 }
 
