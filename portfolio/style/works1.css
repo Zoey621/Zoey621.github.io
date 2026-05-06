@@ -609,7 +609,7 @@ textarea:focus {
         font-style: normal;
         font-size: 12vh;
         color: #fAf8f7;
-        transform: translate(20px, 0px);
+        transform: translate(10px, 0px);
         line-height: .87;
     }
 
@@ -635,7 +635,7 @@ textarea:focus {
         justify-content: left;
         font-size: 2.2vh;
         color: #fAf8f7; 
-        margin: 3.08vh;
+        margin: 10px;
        
     }
 
@@ -775,7 +775,7 @@ textarea:focus {
         justify-content: left;
         font-size: 2.2vh;
         color: #fAf8f7; 
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .hunan_phone {
