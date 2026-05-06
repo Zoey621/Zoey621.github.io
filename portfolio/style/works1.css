@@ -602,6 +602,7 @@ textarea:focus {
         display: block;
         font-size: 75px;
         transform: translate(0px, -12px);
+        line-height: .60;
     }
 
     h1 {
@@ -981,16 +982,18 @@ textarea:focus {
     
     .form {
         display: flex;
-        transform: translate(0px, 50px);
-        margin-left: 44px;
+        transform: translate(0px, 0px);
+        margin-left: 10px;
         position: relative;
         /* background-color: aqua; */
     }
 
     .submit-button {
+        width: auto;
         display: flex;
-        transform: translate(630px, -750px);
-        margin-left: 44px;
+        transform: translate(0px, 0px);
+        margin-left: 10px;
+        margin-bottom: 10px;
         position: relative;
         /* border: orange solid 4px; */
         background-color: #D72740;
@@ -998,6 +1001,7 @@ textarea:focus {
         font-family: "reboto slab", serif;
         font-size: 24pt;
         color: #fAf8f7; 
+        
     }
 
     .footer {
@@ -1110,7 +1114,6 @@ textarea:focus {
     cursor: pointer;
     align-self: flex-start;
     padding: 10px;
-    font-weight: bold;
     transition: 0.3s ease-in-out;
 }
 
@@ -1124,7 +1127,7 @@ textarea:focus {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    font-family: var(--font-family-primary);
+    font-family: venice-blvd, sans-serif;
     padding: 10px 0;
     transition: color 0.3s ease;
 }
