@@ -85,6 +85,7 @@ footer {
     height: 50px;
     display: flex;
     position: sticky;
+    margin-top: -300px;
 }
 
 h1 {
@@ -515,7 +516,7 @@ textarea:focus {
     .contact-form {
         transform: translate(0px, 0px);
         height: 40vh;
-        width: 80vh;
+        width: 100vh;
         display: flex;
         flex-direction: column;
         margin: 10px;
@@ -523,35 +524,36 @@ textarea:focus {
     }
 
     .my-email {
-        width: 80vh;
+        width: auto;
         display: flex;
         font-family: "alta-california", sans-serif;
         font-style: normal;
-        font-size: 24pt;
+        font-size: 170pt;
         color: #fAf8f7;
-        transform: translate(0px, 0px);
-        margin-left: 10px;
+        transform: translate(0px, -610px);
+        margin-left: 44px;
         
 
     }
 
     .email {
-        transform: translate(0px, -7px);
+        transform: translate(0px, -610px) rotate(2deg);
         width: auto;
         display: flex;
         font-family: "venice blvd", sans-serif;
         justify-content: left;
-        font-size: 10pt;
+        font-size: 40pt;
         color: #fAf8f7; 
-        margin-left: 10px;
+        margin-left: 44px;
         z-index: 2;
     }
 
     .form {
         display: flex;
-        transform: translate(0px, -300px);
+        transform: translate(0px, -620px);
+        margin-left: 44px;
         position: relative;
-        background-color: aqua;
+        /* background-color: aqua; */
     }
 
     
