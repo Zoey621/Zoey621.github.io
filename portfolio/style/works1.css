@@ -85,7 +85,6 @@ footer {
     height: 50px;
     display: flex;
     position: sticky;
-    margin-top: -300px;
 }
 
 h1 {
@@ -466,7 +465,7 @@ input:focus,
 textarea:focus {
   background-color: #cfcfcf;
 }
-
+/* 
 
 #openbutton {display: none;
         border: orange solid 4px;
@@ -474,46 +473,45 @@ textarea:focus {
         cursor: pointer;
     }
 
-    #closebutton {
+#closebutton {
         border: orange solid 4px;
         transform: scale(1.2) ;
-    }
+} */
     
-    .overlay { display: none;
-        height: 100%;
-        width: 100%;
-        display: none;
-        position: fixed;
-        z-index: 20;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.2); /* Black w/opacity */
-    }
+/* .overlay { 
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Black w/opacity */
 
-    
-    .Overlay_Menu_Mobile {display: none;
-        transform: translate(0px, 0px);
-        display: flex;    
-        flex-direction: row;
-        align-items: right;
-        justify-content: flex-end;
-        height: 650px;
-        width: 248px;
-        background-color: aqua;
-    }
+
+/*     
+.Overlay_Menu_Mobile {display: none;
+    transform: translate(0px, 0px);
+    display: flex;    
+    flex-direction: row;
+    align-items: right;
+    justify-content: flex-end;
+    height: 650px;
+    width: 248px;
+    background-color: aqua;
+    } */ */
 
     /* Contact Me Page */
 
-    .call-me {
+.call-me {
         display: flex;
         width: 80vh;
         height: 90vh;
         transform: translate(40px, 0px);
         margin-left: 800px;
 
-    }
+}
 
-    .contact-form {
+.contact-form {
         transform: translate(0px, 0px);
         height: 40vh;
         width: 100vh;
@@ -521,23 +519,23 @@ textarea:focus {
         flex-direction: column;
         margin: 10px;
 
-    }
+}
 
-    .my-email {
+.my-email {
         width: auto;
         display: flex;
         font-family: "alta-california", sans-serif;
         font-style: normal;
         font-size: 170pt;
         color: #fAf8f7;
-        transform: translate(0px, -610px);
+        transform: translate(0px, -660px);
         margin-left: 44px;
         
 
-    }
+}
 
-    .email {
-        transform: translate(0px, -610px) rotate(2deg);
+.email {
+        transform: translate(0px, -700px) rotate(2deg);
         width: auto;
         display: flex;
         font-family: "venice blvd", sans-serif;
@@ -546,16 +544,28 @@ textarea:focus {
         color: #fAf8f7; 
         margin-left: 44px;
         z-index: 2;
-    }
+}
 
-    .form {
+.form {
         display: flex;
-        transform: translate(0px, -620px);
+        transform: translate(0px, -750px);
         margin-left: 44px;
         position: relative;
         /* background-color: aqua; */
-    }
+}
 
+.submit-button {
+        display: flex;
+        transform: translate(630px, -750px);
+        margin-left: 44px;
+        position: relative;
+        /* border: orange solid 4px; */
+        background-color: #D72740;
+        cursor: pointer;
+        font-family: "reboto slab", serif;
+        font-size: 24pt;
+        color: #fAf8f7; 
+}
     
 
 /*phonesize*/
@@ -578,13 +588,6 @@ textarea:focus {
         height: 12.31vh;
     }
 
-    /* .menu {
-        display: block;
-        position: absolute;
-        transform: translate(0px, -80px);
-        z-index: 10;
-    } */
-
     .Mobile_Works {
         color: black;
         padding: 0px 20px;
@@ -596,42 +599,7 @@ textarea:focus {
     h1 {
         display: none;
     }
-        
-        /* Style the button to remove default borders if desired */
-    #openbutton {
-        border: orange solid 4px;
-        background: none;
-        cursor: pointer;
-    }
-
-    #closebutton {
-        border: orange solid 4px;
-        transform: scale(1.2) ;
-    }
     
-    .overlay {
-        height: 100%;
-        width: 100%;
-        display: none;
-        position: fixed;
-        z-index: 20;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.2); /* Black w/opacity */
-    }
-
-    
-    .Overlay_Menu_Mobile {
-        transform: translate(0px, 0px);
-        display: flex;    
-        flex-direction: row;
-        align-items: right;
-        justify-content: flex-end;
-        height: 650px;
-        width: 248px;
-        background-color: aqua;
-    }
-
     .details-page-h1 {
         display: block;
         font-family: "alta-california", sans-serif;
@@ -957,7 +925,7 @@ textarea:focus {
         display: flex;
         width: auto;
         height: 47vh;
-        transform: translate(40px, 0px);
+        transform: translate(0px, 0px);
 
     }
 
@@ -1001,5 +969,157 @@ textarea:focus {
         font-size: 14px;
         font-family: roboto, sans-serif;
     }
+
+    
+    .form {
+        display: flex;
+        transform: translate(0px, 50px);
+        margin-left: 44px;
+        position: relative;
+        /* background-color: aqua; */
+    }
+
+    .submit-button {
+        display: flex;
+        transform: translate(630px, -750px);
+        margin-left: 44px;
+        position: relative;
+        /* border: orange solid 4px; */
+        background-color: #D72740;
+        cursor: pointer;
+        font-family: "reboto slab", serif;
+        font-size: 24pt;
+        color: #fAf8f7; 
+    }
+
+    .footer {
+        margin-top: 0px;
+        display: none;
+
+    }
+
+.buttons {
+    border: 1px solid purple;
+    justify-content: center;
+    display: flex;
+    font-family: var(--font-family-primary);
+    font-size: 70pt;
+    margin: 0px;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100px;
+    gap: 20px;
+    align-items: center;
+}
+
+.buttons a {
+    flex-direction: row;
+    display: flex;
+    text-decoration: none;
+    color: var(--accent-color);
+    padding: 0px 60px;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons a:hover {
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons a:link {
+    transform: translate(0px, 0px);
+    padding: 0px 50px;
+}
+
+/* Burger Button */
+.burger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.burger-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Backdrop - covers screen behind drawer */
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.backdrop.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Drawer/Slide-out menu */
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: translateX(100%);
+    transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 20;
+    overflow-y: auto;
+    padding: 1.5rem 1rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.drawer.active {
+    transform: translateX(0);
+}
+
+.drawer #closeBtn {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-start;
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.drawer #closeBtn:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.drawer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--font-family-primary);
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.drawer a:hover {
+    color: var(--secondary-color);
+}
+
+}
+
+
 
 @media screen and (max-width: 2560px) { }

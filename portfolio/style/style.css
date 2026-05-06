@@ -1,0 +1,160 @@
+* {
+    outline: 1px solid rgb(0, 64, 255);
+    transition: .3 ease-in-out;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #D72740;
+    --secondary-color: #fAf8f7;
+    --accent-color: #000000;
+    --background-color: #000000;
+    --font-family-primary: "alta-california", sans-serif;
+    --font-family-secondary: "reboto slab", serif;
+}
+
+body {
+    position: relative;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/background_paper.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+h1 {
+    transform: translate(44px, 0px);
+    margin: 0;
+    font-family: var(--font-family-primary);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18vh;
+    color: var(--secondary-color);
+    display: flex;
+    max-width: auto;
+    z-index: 8;
+}
+
+.buttons {
+    border: 1px solid purple;
+    justify-content: center;
+    display: flex;
+    font-family: var(--font-family-primary);
+    font-size: 70pt;
+    margin: 0px;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100px;
+    gap: 20px;
+    align-items: center;
+}
+
+.buttons a {
+    flex-direction: row;
+    display: flex;
+    text-decoration: none;
+    color: var(--accent-color);
+    padding: 0px 60px;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons a:hover {
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons a:link {
+    transform: translate(0px, 0px);
+    padding: 0px 50px;
+}
+
+/* Burger Button */
+.burger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.burger-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Backdrop - covers screen behind drawer */
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+.backdrop.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Drawer/Slide-out menu */
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: translateX(100%);
+    transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 20;
+    overflow-y: auto;
+    padding: 1.5rem 1rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.drawer.active {
+    transform: translateX(0);
+}
+
+.drawer #closeBtn {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-start;
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.drawer #closeBtn:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
+.drawer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: var(--font-family-primary);
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.drawer a:hover {
+    color: var(--secondary-color);
+}

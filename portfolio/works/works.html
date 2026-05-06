@@ -15,51 +15,16 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="buttons">
         <h1 class="Mobile_Works">Works</h1>
+        <a href="welcome.html">Home</a>
+        <a href="works/works.html"> Works</a>
+        <a href="about_me.html">About Me</a>
+        <a href="contact.html">Contact</a>
 
-        <button onclick="openOverlay()" id="openbutton">
-                <img src="../img/icons/Burger Menu.svg" alt="Open Menu" width="50" height="50">
+        <button id="openBtn" class="burger-btn">
+            <img src="img/icons/Burger Menu.svg" width="50" height="50" alt="Open menu" style="pointer-events: none;" />
         </button>
-
-        <!-- The Overlay Container -->
-        <div id="myOverlay" class="overlay">
-        <div class="overlay-content">
-            <span class="closebutton" onclick="closeOverlay()">&times;</span>
-            <p>OVERLAY</p>
-            
-            <div class="Overlay_Menu_Mobile">
-            <img src="../img/icons/overlay menu.svg" alt="Overlay Menu">
-            </div>
-        </div>
-        </div>
-        
-        <script>
-
-
-            function openOverlay() {
-                document.getElementById("myOverlay").style.display = "block";
-            }
-
-            function closeOverlay() {
-                document.getElementById("myOverlay").style.display = "none";
-            }
-        </script>
-
-
-    
-        <!-- <button class="menu" onclick="openOverlay()">
-            <img src="../img/icons/Burger Menu.svg" alt="Burger Menu">
-        </button>
-         <a href="burger-menu">
-            <div class="menu">
-            <img src="../img/icons/Burger Menu.svg" alt="Burger Menu">
-            </div> -->
-        
-        <a href="../welcome.html">Home </a>
-        <a href="../works/works.html">Works </a>
-        <a href="../about_me.html">About me </a>
-        <a href="../contact_me.html">Contact </a>
     </nav>
     
     <main>

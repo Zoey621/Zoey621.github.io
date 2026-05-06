@@ -4,43 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/works1.css">
 </head>
 <body class="container">
-   <h1>Zoey Lawrence</h1> 
-
    <nav class="buttons">
-    <button onclick="openOverlay()" id="openBtn">
-                <img src="../img/icons/Burger Menu.svg" alt="Open Menu" width="50" height="50">
-    </button>
-
-        <!-- The Overlay Container -->
-        <div id="myOverlay" class="overlay">
-        <div class="overlay-content">
-            <span class="closebtn" onclick="closeOverlay()">&times;</span>
-
-            <p>This is your overlay content!</p>
-        </div>
-        </div>
-        
-        <script>
-            function openOverlay() {
-                document.getElementById("myOverlay").style.display = "block";
-            }
-
-            function closeOverlay() {
-                document.getElementById("myOverlay").style.display = "none";
-            }
-        </script> 
-        
+         <h1 class="Mobile_Works">Home</h1>
         <a href="welcome.html">Home</a>
         <a href="works/works.html"> Works</a>
         <a href="contact.html">Contact</a>
         <a href="about_me.html">About Me</a>
-     </nav>  
+
+        <button id="openBtn" class="burger-btn">
+            <img src="img/icons/Burger Menu.svg" width="50" height="50" alt="Open menu" style="pointer-events: none;" />
+        </button>
+
+     </nav> 
+
+     <h1>Welcome</h1>
+     
     
 
+     <!-- Backdrop overlay -->
+     <div class="backdrop" id="backdrop"></div>
 
+    
+     <div class="drawer" id="drawer">
+         <button id="closeBtn">✕</button>
+         <a href="welcome.html">Home</a>
+         <a href="works/works.html">Works</a>
+         <a href="contact.html">Contact</a>
+         <a href="about_me.html">About Me</a>
+     </div>
 
-</body>
+    <script>
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const drawer = document.getElementById('drawer');
+        const backdrop = document.getElementById('backdrop');
+
+        // Open drawer
+        openBtn.addEventListener('click', () => {
+            drawer.classList.add('active');
+            backdrop.classList.add('active');
+        });
+
+        // Close drawer
+        closeBtn.addEventListener('click', () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+        });
+
+        // Close drawer when clicking backdrop
+        backdrop.addEventListener('click', () => {
+            drawer.classList.remove('active');
+            backdrop.classList.remove('active');
+            
+        });
+    </script>
+
+ 
+  </body>
 </html>
+    
+    
+    

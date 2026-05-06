@@ -14,15 +14,17 @@
 
 <body>
 
-   <nav>
+   <nav class="buttons">
         <h1 class="Mobile_Works">Works</h1>
-        <button class="menu" onclick="openOverlay()">Menu</button>
-        <a href="welcome.html">Home </a>
-        <a href="../portfolio/works/works.html">Works </a>
-        <a href="about_me.html">About me </a>
-        <a href="contact_me.html">Contact </a>
+        <a href="welcome.html">Home</a>
+        <a href="works/works.html"> Works</a>
+        <a href="about_me.html">About Me</a>
+        <a href="contact.html">Contact</a>
+
+        <button id="openBtn" class="burger-btn">
+            <img src="img/icons/Burger Menu.svg" width="50" height="50" alt="Open menu" style="pointer-events: none;" />
+        </button>
     </nav>
-   
     <div>
       <img class="call-me" src="img/contact_me_photos/IMG_0503.png" alt="Contact Me Logo">
     </div>
@@ -47,6 +49,8 @@
   <textarea placeholder="Description"></textarea>
 </form> 
 </div>
+
+<button class="submit-button">Submit</button>
     
 
 </body>
