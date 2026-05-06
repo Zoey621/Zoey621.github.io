@@ -284,6 +284,33 @@ p {
     width: 706.04px;
 }
 
+   .hunan_phone {
+        position: relative;
+        rotate:-10deg; 
+        display: none;
+        transform: translate(150px,15px);
+        height: 120vh;
+        width: 60%;
+        margin: 10px;
+    }
+
+    .hunan-ad {
+        position: relative;
+        display: flex;
+        transform: translate(805px, -305px);
+        height: 100vh;
+        width: 40%;
+        margin: 10px;
+    }
+
+    .hunan-ad-web { display: block;
+        position: relative;
+        transform: translate(-1400px,-3200px);
+        scale: calc(.33);
+        height: 20vh;
+        width: 40%;
+    }
+
 .type_booklet {
     position: absolute;
     display: flex;
