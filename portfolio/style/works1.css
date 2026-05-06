@@ -1037,12 +1037,12 @@ textarea:focus {
         height: auto;
     }
     .welcome {
-        transform: translate(44px,0px);
+        transform: transldonate(10px,15px);
         margin: 0;
         font-family: "alta-california", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 18vh;
+        font-size: 15vh;
         color: #fAf8f7;
         display: flex;
         max-width: auto;
@@ -1050,7 +1050,7 @@ textarea:focus {
     }
 
     .spikes {
-        transform: translate(0px, 80px);
+        transform: translate(-48px, 80px);
         position: relative;
         scale: calc(1.4);
     
