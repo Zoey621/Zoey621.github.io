@@ -870,7 +870,7 @@ textarea:focus {
     /* About me page */
 
     .Z{ 
-        transform: translate(-82px);
+        transform: translate(-72px, -10px);
         position: absolute;
         display: flex;
         color: #fAf8f7;
@@ -882,7 +882,7 @@ textarea:focus {
     }
 
     .L {
-        transform: translate(-82px,100px);
+        transform: translate(-72px,90px);
         position: absolute;
         display: flex;
         color: #fAf8f7;
@@ -895,7 +895,7 @@ textarea:focus {
     }
 
     .my_name {
-        transform: translate(90px);
+        transform: translate(80px);
         position: relative;
         flex-direction: column;
         display: flex;
@@ -912,7 +912,7 @@ textarea:focus {
     }
 
     h2{
-        transform: translate(0px, 220px);
+        transform: translate(0px, 240px);
         font-family: "venice-blvd", sans-serif;
         font-size: 24pt;
         font-weight: 700;
@@ -920,7 +920,7 @@ textarea:focus {
         color: #fAf8f7;
         padding: 0px;
         padding-bottom: 10px;
-        margin-left: 20px;
+        margin-left: 10px;
         width: auto;
     
     }
@@ -929,33 +929,33 @@ textarea:focus {
         display: flex;
         width: auto;
         height: 40vh;
-        transform: translate(-10px, -625px);
+        transform: translate(-10px, -500px);
     }
 
     .paragraph_one {
-        transform: translate(0px, 270px) rotate(.7deg);
+        transform: translate(0px, 200px) rotate(.7deg);
         display: flex;
         z-index: 6;
-        height: 200px;
+        height: 100px;
         width: auto;
         font-family: "reboto slab", serif;
         justify-content: left;
-        font-size: 14pt;
+        font-size: 2.2vh;
         color: #fAf8f7; 
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     .paragraph_two {
-        transform: translate(0px, 270px) rotate(.7deg);
+        transform: translate(0px, 180px) rotate(.7deg);
         display: flex;
         z-index: 6;
-        height: 120px;
+        height: 160px;
         width: auto;
         font-family: "reboto slab", serif;
         justify-content: left;
-        font-size: 14pt;
+        font-size: 2.2vh;
         color: #fAf8f7; 
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     /* Contact Me Page */
@@ -1033,8 +1033,9 @@ textarea:focus {
         
     }
 
-    /* .welcome-main {
-    } */
+    .welcome-main {
+        overflow: ;
+    } 
     .welcome {
         transform: translate(10px,15px);
         margin: 0;
@@ -1048,10 +1049,17 @@ textarea:focus {
         z-index: 8;
     }
 
-
+    .instagram {
+        transform: translate(170px, 300px);
+        position: relative;
+        height: 20vh;
+        width: 30vw;
+        scale: calc(1.1);
+        z-index: 2;
+    }
 
     .spikes {
-        transform: translate(-48px, 80px);
+        transform: translate(-48px, -20px);
         position: relative;
         scale: calc(1.4);
     
